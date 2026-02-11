@@ -367,9 +367,11 @@ section {
 }
 
 .topics-list li::before {
-    content: "—";
+    content: "◆";
     position: absolute;
     left: 0;
+    font-size: 0.5rem;
+    top: 1.05rem;
     color: var(--color-accent);
 }
 
@@ -574,6 +576,28 @@ footer a:hover {
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.speaker-website-link {
+    position: absolute;
+    top: 1.25rem;
+    right: 1rem;
+    color: var(--color-accent);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    line-height: 1;
+}
+
+.speaker-website-link:hover {
+    opacity: 1;
+    color: var(--color-ink);
+}
+
+.speaker-website-link [data-lucide] {
+    width: 20px;
+    height: 20px;
 }
 
 .speaker-info-col h3 {
