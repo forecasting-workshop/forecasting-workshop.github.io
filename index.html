@@ -53,6 +53,25 @@
     </header>
 
     <main>
+        <!-- News Section -->
+        <section id="news">
+            <div class="container">
+                <h2 class="section-title">News</h2>
+                <div class="content-box">
+                    <ul class="news-list">
+                        <li>
+                            <span class="news-date">March 25, 2026</span>
+                            We are co-organizing the <a href="https://www.prophethacks.com/" target="_blank">AI Forecasting Hackathon</a> (April 11&ndash;12, 2026) &mdash; build AI agents that predict the future and compete on the Prophet Arena leaderboard. Top teams will be invited to present at our ICML workshop. <a href="https://www.prophethacks.com/" target="_blank">Learn more &amp; apply</a>.
+                        </li>
+                        <li>
+                            <span class="news-date">March 20, 2026</span>
+                            Our workshop <em>Forecasting as a New Frontier of Intelligence</em> has been accepted at <strong>ICML 2026</strong> in Seoul, Korea!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <!-- About Section -->
         <section id="about">
             <div class="container">
@@ -62,7 +81,7 @@
                         Forecasting has a rich tradition in ML, spanning key areas such as time-series analysis, online learning, data-driven decisions and quantitative finance. Recent advances in foundation models, however, raise a qualitatively new question: <i>can general-purpose AI systems reliably anticipate future events across diverse real-world domains?</i> Indeed, forecasting is often viewed as a hallmark of sophisticated intelligence that requires internalizing patterns in dynamic environments and reasoning about consequences in the noisy real world, and we are witnessing a growing research efforts on advancing and benchmarking  forecasting capabilities of AI systems.
                     </p>
                     <p>
-                        Motivated by its deep roots and emerging paradigms, we envision forecasting as an exciting research program that requires lens from <b>foundation models, agentic design, benchmarking, probabilistic reasoning, information retrieval, regret minimization, world modeling, etc.</b>  As the AI community seeks the next frontier in AI capabilities, this workshop aims to bring together researchers across machine learning, statistics, economics, finance and others  to explore forecasting both as a foundational technical challenge and as a core capability of general-purpose AI systems. 
+                        Motivated by its deep roots and emerging paradigms, we envision forecasting as an exciting research program that requires lens from <b>foundation models, agentic design, benchmarking, probabilistic reasoning, information retrieval, regret minimization, world modeling, etc.</b>  As the AI community seeks the next frontier in AI capabilities, this workshop aims to bring together researchers across machine learning, statistics, economics, finance and others  to explore forecasting both as a foundational technical challenge and as a core capability of general-purpose AI systems.
                     </p>
                 </div>
                 <!-- <div class="content-box mt-2">
@@ -78,7 +97,7 @@
         <section id="cfp">
             <div class="container">
                 <h2 class="section-title">Call for Papers</h2>
-                
+
                 <div class="section-intro">
                     <p>
                         We invite submissions on all aspects of AI forecasting, from methodological advances to benchmark design to applications in real-world domains. Papers should be submitted via OpenReview and will undergo peer review by our program committee.
@@ -89,7 +108,7 @@
                 </div>
 
                 <!-- Key Dates -->
-                <div class="subsection">
+                <!--<div class="subsection">
                     <h3 class="subsection-title">Key Dates</h3>
                     <table class="data-table">
                         <thead>
@@ -121,7 +140,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div>-->
 
                 <!-- Topics -->
                 <div class="subsection">
@@ -243,7 +262,7 @@
             <div class="container">
                 <h2 class="section-title">Invited Speakers</h2>
                 <p>Distinguished researchers from academia and industry will share their perspectives on AI forecasting.</p>
-                
+
                 <div class="speaker-grid">
                     <!-- Speaker 1 -->
                     <div class="speaker-card">
@@ -289,19 +308,19 @@
                     <div class="speaker-card">
                         <div class="speaker-image-col">
                             <div class="speaker-placeholder">
-                                <img src="img/jon_schneider.jpg" alt="Jon Schneider" />
+                                <img src="img/nicole_kagan.jpg" alt="Nicole Kagan" />
                             </div>
                         </div>
                         <div class="speaker-info-col">
-                            <a href="https://jschnei.github.io/" class="speaker-website-link" title="Website" target="_blank"><i data-lucide="compass"></i></a>
-                            <h3>Jon Schneider</h3>
-                            <p class="affiliation">Google Research NYC</p>
+                            <a href="https://research.kalshi.com/team" class="speaker-website-link" title="Website" target="_blank"><i data-lucide="compass"></i></a>
+                            <h3>Nicole Kagan</h3>
+                            <p class="affiliation">Kalshi</p>
                             <button class="speaker-bio-toggle" onclick="toggleSpeakerBio(this)">
                                 <i data-lucide="chevron-down" class="chevron-icon"></i>
                                 <span>View Bio</span>
                             </button>
                             <div class="speaker-bio-content">
-                                <p>Speaker biography coming soon.</p>
+                                <p>Nicole Kagan leads Kalshi Research, focusing on prediction market design and data analysis. She holds degrees from Harvard and Oxford, with research on AI-driven trading in prediction markets published at ICLR 2026.</p>
                             </div>
                         </div>
                     </div>
@@ -381,7 +400,7 @@
                         The workshop is organized by a team spanning academia and industry, combining diverse backgrounds and strong expertise in AI/ML research. Led by senior organizers with rich experience organizing major conferences and workshops, the organizing committee is dedicated to ensuring smooth execution.
                     </p>
                 </div>
-                
+
                 <div class="organizer-grid">
                     <!-- Organizer 1 -->
                     <div class="organizer-card">
@@ -449,8 +468,8 @@
 
                 <div class="content-box mt-2">
                     <p class="text-small" style="margin-bottom: 0;">
-                        <strong>Contact:</strong> For all communications regarding the workshop, please contact 
-                        <a href="mailto:wujibang@nyu.edu">Jibang Wu</a> or 
+                        <strong>Contact:</strong> For all communications regarding the workshop, please contact
+                        <a href="mailto:wujibang@nyu.edu">Jibang Wu</a> or
                         <a href="mailto:haifengxu@uchicago.edu">Haifeng Xu</a>.
                     </p>
                 </div>
@@ -566,10 +585,10 @@
             const content = card.querySelector('.speaker-bio-content');
             const chevron = button.querySelector('.chevron-icon');
             const span = button.querySelector('span');
-            
+
             content.classList.toggle('expanded');
             chevron.classList.toggle('expanded');
-            
+
             if (content.classList.contains('expanded')) {
                 span.textContent = 'Hide Bio';
             } else {
