@@ -677,31 +677,103 @@ footer a:hover {
 }
 
 .speaker-bio-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-.speaker-bio-content.expanded {
-    max-height: 500px;
-}
-
-.speaker-bio-content p {
-    padding-top: 0.75rem;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    color: var(--color-ink-light);
-    margin: 0;
+    display: none;
 }
 
 .chevron-icon {
-    transition: transform 0.3s ease;
     width: 16px;
     height: 16px;
 }
 
-.chevron-icon.expanded {
-    transform: rotate(180deg);
+/* Speaker Bio Modal */
+.speaker-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(44, 36, 22, 0.6);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.speaker-modal-overlay.active {
+    display: flex;
+}
+
+.speaker-modal {
+    background-color: var(--color-cream);
+    border: 1px solid var(--color-border);
+    max-width: 520px;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.speaker-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: var(--color-ink);
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.speaker-modal-close:hover {
+    opacity: 1;
+}
+
+.speaker-modal-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.speaker-modal-avatar {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border: 1px solid var(--color-border);
+    flex-shrink: 0;
+}
+
+.speaker-modal-header h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.speaker-modal-header .affiliation {
+    font-size: 0.875rem;
+    color: var(--color-ink-light);
+    margin: 0;
+}
+
+.speaker-modal-body p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--color-ink-light);
+    margin: 0;
 }
 
 /* Program Committee */
