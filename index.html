@@ -20,11 +20,11 @@
             </button>
             <div class="navbar-links" id="navLinks">
                 <a href="#about" class="navbar-link">About</a>
-                <a href="#cfp" class="navbar-link">Call for Papers</a>
-                <a href="#papers" class="navbar-link">Accepted Papers</a>
-                <a href="#schedule" class="navbar-link">Schedule</a>
                 <a href="#speakers" class="navbar-link">Speakers</a>
+                <a href="#schedule" class="navbar-link">Schedule</a>
+                <a href="#papers" class="navbar-link">Accepted Papers</a>
                 <a href="#organizers" class="navbar-link">Organizers</a>
+                <a href="#cfp" class="navbar-link">Call for Papers</a>
                 <a href="#contact" class="navbar-link">Contact</a>
             </div>
         </div>
@@ -107,6 +107,20 @@
                         Reliable forecasting under uncertainty is central to many high-stakes societal domains and improved AI forecasting systems could support better decision-making, enhance market efficiency. However, overconfident or poorly calibrated forecasts may amplify misinformation or introduce systemic risks. By emphasizing uncertainty, calibration, and outcome-grounded evaluation, this workshop promotes responsible development and deployment of forecasting-capable AI systems, and encourages discussion of safeguards and best practices for socially impactful forecasting applications.
                     </p>
                 </div> -->
+
+                <!-- Topics of Interest -->
+                <div class="subsection">
+                    <h3 class="subsection-title">Topics of Interest</h3>
+                    <p class="mb-1">The main topics of our workshop include, but are not limited to, the following aspects:</p>
+                    <ul class="topics-list">
+                        <li><strong>Architectures:</strong> agentic systems, LLM-as-a-Prophet, foundation models and world models.</li>
+                        <li><strong>Evaluation:</strong> automated event generation, metrics and benchmark design.</li>
+                        <li><strong>Reasoning:</strong> probabilistic reasoning, calibration, causal and temporal inference.</li>
+                        <li><strong>Retrieval:</strong> search architecture, credibility assessment and retrieval-augmented generation.</li>
+                        <li><strong>Foundations:</strong> scoring rules, online learning, and decision-theoretic frameworks.</li>
+                        <li><strong>Markets &amp; Society:</strong> prediction markets, societal impacts of AI-driven forecasting.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -287,97 +301,89 @@
             </div>
         </section>
 
-        <!-- Call for Papers Section -->
-        <section id="cfp">
+        <!-- Schedule Section -->
+        <section id="schedule">
             <div class="container">
-                <h2 class="section-title">Call for Papers</h2>
-
-                <div class="section-intro">
-                    <p>
-                        We invite submissions on all aspects of AI forecasting, from methodological advances to benchmark design to applications in real-world domains. Papers should be submitted via OpenReview and will undergo peer review by our program committee.
-                    </p>
-                    <p>
-                        Accepted papers will be presented as posters during the workshop, with selected papers invited for oral presentations. A best paper award will be given at the closing session.
-                    </p>
-                </div>
-
-                <!-- Key Dates -->
-                <div class="subsection">
-                    <h3 class="subsection-title">Key Dates</h3>
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Event</th>
-                                <th>Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Submission Portal Opens</td>
-                                <td>April 21, 2026</td>
-                            </tr>
-                            <tr>
-                                <td>Abstract Registration Deadline</td>
-                                <td>May 11, 2026 (11:59 PM UTC, not AoE)</td>
-                            </tr>
-                            <tr>
-                                <td>Submission Deadline</td>
-                                <td>May 13, 2026 (11:59 PM UTC, not AoE)</td>
-                            </tr>
-                            <tr>
-                                <td>Reviewer Bidding</td>
-                                <td>May 15&ndash;18, 2026</td>
-                            </tr>
-                            <tr>
-                                <td>Review Period</td>
-                                <td>May 20 &ndash; June 8, 2026</td>
-                            </tr>
-                            <tr>
-                                <td>Author Notification</td>
-                                <td>June 10, 2026</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- Topics -->
-                <div class="subsection">
-                    <h3 class="subsection-title">Topics of Interest</h3>
-                    <p class="mb-1">The main topics of our workshop include, but are not limited to, the following aspects:</p>
-                    <ul class="topics-list">
-                        <li><strong>Architectures:</strong> agentic systems, LLM-as-a-Prophet, foundation models and world models.</li>
-                        <li><strong>Evaluation:</strong> automated event generation, metrics and benchmark design.</li>
-                        <li><strong>Reasoning:</strong> probabilistic reasoning, calibration, causal and temporal inference.</li>
-                        <li><strong>Retrieval:</strong> search architecture, credibility assessment and retrieval-augmented generation.</li>
-                        <li><strong>Foundations:</strong> scoring rules, online learning, and decision-theoretic frameworks.</li>
-                        <li><strong>Markets &amp; Society:</strong> prediction markets, societal impacts of AI-driven forecasting.</li>
-                    </ul>
-                </div>
-
-                <!-- Submission Guidelines -->
-                <div class="subsection">
-                    <h3 class="subsection-title">Submission Guidelines</h3>
-                    <div class="content-box">
-                        <p><strong>Format:</strong> Submissions should be up to 4 pages (excluding references and appendix) using the ICML 2026 template.</p>
-                        <p><strong>Anonymity:</strong> All submissions should be anonymized for double-blind review.</p>
-                        <p><strong>Non-archival &amp; Dual Submission:</strong> The workshop is non-archival, so dual submission is allowed &mdash; we welcome submissions of work that has been previously published or is under review elsewhere, with proper disclosure.</p>
-                        <p><strong>Platform:</strong> Submissions will be handled through OpenReview.</p>
-                        <p style="margin-bottom: 0;"><a href="https://openreview.net/group?id=ICML.cc/2026/Workshop/Forecast" class="btn btn-primary" style="margin-top: 0.75rem;" target="_blank">Submit via OpenReview</a></p>
-                    </div>
-                </div>
-
-                <!-- Hackathon -->
-                <div class="subsection">
-                    <h3 class="subsection-title">Forecasting Agent Hackathon</h3>
-                    <div class="content-box">
-                        <p>
-                            Ahead of the workshop, we co-hosted the <a href="https://www.prophethacks.com/" target="_blank">AI Forecasting Hackathon</a> (May 16&ndash;17, 2026), where participants built forecasting agents and competed on the Prophet Arena leaderboard.
-                        </p>
-                        <p style="margin-bottom: 0;">
-                            Congratulations to our winners, <strong>Hanson Wen</strong> (UC Berkeley) and <strong>James Gui</strong> (USC), who will share their approach during the Hackathon Winner Presentation in the workshop program, and to our runner-up, <strong>Shirish Chinchanikar</strong> (UChicago).
-                        </p>
-                    </div>
-                </div>
+                <h2 class="section-title">Workshop Schedule (Tentative)</h2>
+                <p class="mb-1">All times are in local Seoul time (KST).</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 140px;">Time</th>
+                            <th>Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00 – 08:10</td>
+                            <td>Opening Remarks</td>
+                        </tr>
+                        <tr>
+                            <td>08:15 – 09:00</td>
+                            <td>Invited Talk #1</td>
+                        </tr>
+                        <tr>
+                            <td>09:00 – 09:45</td>
+                            <td>Invited Talk #2</td>
+                        </tr>
+                        <tr>
+                            <td>09:45 – 10:05</td>
+                            <td>Oral Presentation Slot #1 (2 x 10 minutes)</td>
+                        </tr>
+                        <tr>
+                            <td>10:05 – 10:15</td>
+                            <td>Hackathon Winner Presentation</td>
+                        </tr>
+                        <tr class="schedule-break">
+                            <td>10:15 – 10:30</td>
+                            <td>Break / Meet-and-Greet</td>
+                        </tr>
+                        <tr>
+                            <td>10:30 – 11:15</td>
+                            <td>Invited Talk #3</td>
+                        </tr>
+                        <tr>
+                            <td>11:15 – 12:00</td>
+                            <td>Invited Talk #4</td>
+                        </tr>
+                        <tr class="schedule-break">
+                            <td>12:00 – 13:10</td>
+                            <td>Lunch / Poster Session</td>
+                        </tr>
+                        <tr>
+                            <td>13:10 – 13:30</td>
+                            <td>Oral Presentation Slot #2 (2 x 10 minutes)</td>
+                        </tr>
+                        <tr>
+                            <td>13:30 – 14:15</td>
+                            <td>Invited Talk #5</td>
+                        </tr>
+                        <tr>
+                            <td>14:15 – 15:00</td>
+                            <td>Invited Talk #6</td>
+                        </tr>
+                        <tr class="schedule-break">
+                            <td>15:00 – 15:15</td>
+                            <td>Break / Meet-and-Greet</td>
+                        </tr>
+                        <tr>
+                            <td>15:15 – 15:30</td>
+                            <td>Industry Session + Award Announcement</td>
+                        </tr>
+                        <tr>
+                            <td>15:30 – 16:00</td>
+                            <td>Best Paper &amp; Runner-Up Presentations</td>
+                        </tr>
+                        <tr>
+                            <td>16:00 – 16:50</td>
+                            <td>Panel Discussion</td>
+                        </tr>
+                        <tr>
+                            <td>16:50 – 17:00</td>
+                            <td>Closing Remarks</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -744,92 +750,6 @@
             </div>
         </section>
 
-        <!-- Schedule Section -->
-        <section id="schedule">
-            <div class="container">
-                <h2 class="section-title">Workshop Schedule (Tentative)</h2>
-                <p class="mb-1">All times are in local Seoul time (KST).</p>
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th style="width: 140px;">Time</th>
-                            <th>Event</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>08:00 – 08:10</td>
-                            <td>Opening Remarks</td>
-                        </tr>
-                        <tr>
-                            <td>08:15 – 09:00</td>
-                            <td>Invited Talk #1</td>
-                        </tr>
-                        <tr>
-                            <td>09:00 – 09:45</td>
-                            <td>Invited Talk #2</td>
-                        </tr>
-                        <tr>
-                            <td>09:45 – 10:05</td>
-                            <td>Oral Presentation Slot #1 (2 x 10 minutes)</td>
-                        </tr>
-                        <tr>
-                            <td>10:05 – 10:15</td>
-                            <td>Hackathon Winner Presentation</td>
-                        </tr>
-                        <tr class="schedule-break">
-                            <td>10:15 – 10:30</td>
-                            <td>Break / Meet-and-Greet</td>
-                        </tr>
-                        <tr>
-                            <td>10:30 – 11:15</td>
-                            <td>Invited Talk #3</td>
-                        </tr>
-                        <tr>
-                            <td>11:15 – 12:00</td>
-                            <td>Invited Talk #4</td>
-                        </tr>
-                        <tr class="schedule-break">
-                            <td>12:00 – 13:10</td>
-                            <td>Lunch / Poster Session</td>
-                        </tr>
-                        <tr>
-                            <td>13:10 – 13:30</td>
-                            <td>Oral Presentation Slot #2 (2 x 10 minutes)</td>
-                        </tr>
-                        <tr>
-                            <td>13:30 – 14:15</td>
-                            <td>Invited Talk #5</td>
-                        </tr>
-                        <tr>
-                            <td>14:15 – 15:00</td>
-                            <td>Invited Talk #6</td>
-                        </tr>
-                        <tr class="schedule-break">
-                            <td>15:00 – 15:15</td>
-                            <td>Break / Meet-and-Greet</td>
-                        </tr>
-                        <tr>
-                            <td>15:15 – 15:30</td>
-                            <td>Industry Session + Award Announcement</td>
-                        </tr>
-                        <tr>
-                            <td>15:30 – 16:00</td>
-                            <td>Best Paper &amp; Runner-Up Presentations</td>
-                        </tr>
-                        <tr>
-                            <td>16:00 – 16:50</td>
-                            <td>Panel Discussion</td>
-                        </tr>
-                        <tr>
-                            <td>16:50 – 17:00</td>
-                            <td>Closing Remarks</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
         <!-- Organizers Section -->
         <section id="organizers">
             <div class="container">
@@ -1007,6 +927,86 @@
             </div>
         </section>
 
+        <!-- Call for Papers Section -->
+        <section id="cfp">
+            <div class="container">
+                <h2 class="section-title">Call for Papers</h2>
+
+                <div class="section-intro">
+                    <p>
+                        We invite submissions on all aspects of AI forecasting, from methodological advances to benchmark design to applications in real-world domains. Papers should be submitted via OpenReview and will undergo peer review by our program committee.
+                    </p>
+                    <p>
+                        Accepted papers will be presented as posters during the workshop, with selected papers invited for oral presentations. A best paper award will be given at the closing session.
+                    </p>
+                </div>
+
+                <!-- Key Dates -->
+                <div class="subsection">
+                    <h3 class="subsection-title">Key Dates</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Submission Portal Opens</td>
+                                <td>April 21, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>Abstract Registration Deadline</td>
+                                <td>May 11, 2026 (11:59 PM UTC, not AoE)</td>
+                            </tr>
+                            <tr>
+                                <td>Submission Deadline</td>
+                                <td>May 13, 2026 (11:59 PM UTC, not AoE)</td>
+                            </tr>
+                            <tr>
+                                <td>Reviewer Bidding</td>
+                                <td>May 15&ndash;18, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>Review Period</td>
+                                <td>May 20 &ndash; June 8, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>Author Notification</td>
+                                <td>June 10, 2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Submission Guidelines -->
+                <div class="subsection">
+                    <h3 class="subsection-title">Submission Guidelines</h3>
+                    <div class="content-box">
+                        <p><strong>Format:</strong> Submissions should be up to 4 pages (excluding references and appendix) using the ICML 2026 template.</p>
+                        <p><strong>Anonymity:</strong> All submissions should be anonymized for double-blind review.</p>
+                        <p><strong>Non-archival &amp; Dual Submission:</strong> The workshop is non-archival, so dual submission is allowed &mdash; we welcome submissions of work that has been previously published or is under review elsewhere, with proper disclosure.</p>
+                        <p><strong>Platform:</strong> Submissions will be handled through OpenReview.</p>
+                        <p style="margin-bottom: 0;"><a href="https://openreview.net/group?id=ICML.cc/2026/Workshop/Forecast" class="btn btn-primary" style="margin-top: 0.75rem;" target="_blank">Submit via OpenReview</a></p>
+                    </div>
+                </div>
+
+                <!-- Hackathon -->
+                <div class="subsection">
+                    <h3 class="subsection-title">Forecasting Agent Hackathon</h3>
+                    <div class="content-box">
+                        <p>
+                            Ahead of the workshop, we co-hosted the <a href="https://www.prophethacks.com/" target="_blank">AI Forecasting Hackathon</a> (May 16&ndash;17, 2026), where participants built forecasting agents and competed on the Prophet Arena leaderboard.
+                        </p>
+                        <p style="margin-bottom: 0;">
+                            Congratulations to our winners, <strong>Hanson Wen</strong> (UC Berkeley) and <strong>James Gui</strong> (USC), who will share their approach during the Hackathon Winner Presentation in the workshop program, and to our runner-up, <strong>Shirish Chinchanikar</strong> (UChicago).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" style="border-bottom: none;">
             <div class="container">
@@ -1017,6 +1017,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Speaker Bio Modal -->
