@@ -837,7 +837,7 @@ footer a:hover {
 }
 
 .sponsor-card {
-    flex: 1 1 220px;
+    flex: 1 1 180px;
     max-width: 320px;
     display: flex;
     align-items: center;
