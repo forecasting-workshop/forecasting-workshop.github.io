@@ -495,6 +495,39 @@ section {
     margin-bottom: 0;
 }
 
+/* Collapsible section / subsection headers */
+summary.collapse-title {
+    cursor: pointer;
+    list-style: none;
+}
+
+summary.collapse-title::-webkit-details-marker {
+    display: none;
+}
+
+summary.collapse-title::after {
+    content: "+";
+    margin-left: 0.6rem;
+    color: var(--color-accent);
+    font-weight: 400;
+}
+
+details[open] > summary.collapse-title::after {
+    content: "\2212";
+}
+
+summary.collapse-title:hover {
+    color: var(--color-accent);
+}
+
+.paper-group > summary.subsection-title {
+    margin-bottom: 0;
+}
+
+.paper-group[open] > summary.subsection-title {
+    margin-bottom: 1rem;
+}
+
 /* Links */
 a {
     color: var(--color-ink);
