@@ -443,6 +443,58 @@ section {
     color: var(--color-ink);
 }
 
+/* FAQ accordion */
+.faq-item {
+    border: 1px solid var(--color-border);
+    background-color: var(--color-cream);
+    margin-bottom: 0.75rem;
+}
+
+.faq-question {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-ink);
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question::after {
+    content: "+";
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.faq-item[open] > .faq-question::after {
+    content: "\2212";
+}
+
+.faq-question:hover {
+    color: var(--color-accent);
+}
+
+.faq-answer {
+    padding: 0 1.25rem 1.25rem;
+}
+
+.faq-answer p {
+    margin-bottom: 0.75rem;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
 /* Links */
 a {
     color: var(--color-ink);
