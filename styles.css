@@ -680,6 +680,15 @@ footer a:hover {
     margin-top: 0.15rem;
 }
 
+.schedule-talk-affil {
+    display: block;
+    font-size: 0.76rem;
+    color: var(--color-ink-light);
+    font-style: italic;
+    line-height: 1.4;
+    margin-top: 0.1rem;
+}
+
 /* Organizer compact grid */
 .organizer-grid {
     display: grid;
@@ -1079,4 +1088,35 @@ footer a:hover {
     font-style: italic;
     line-height: 1.4;
     margin-top: 0.1rem;
+}
+
+/* Interactive author <-> affiliation cross-highlight (Oral Presentations + Schedule).
+   Hover (desktop) or click/tap (pins) any author or institution to light up its whole group. */
+.paper-authors .author,
+.paper-affil .affil,
+.schedule-talk-authors .author,
+.schedule-talk-affil .affil {
+    border-radius: 3px;
+    padding: 0 0.15em;
+    margin: 0 -0.1em;
+    cursor: pointer;
+    transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.paper-item:has([data-affil~="1"]:hover) [data-affil~="1"],
+.paper-item:has([data-affil~="2"]:hover) [data-affil~="2"],
+.paper-item:has([data-affil~="3"]:hover) [data-affil~="3"],
+.paper-item:has([data-affil~="4"]:hover) [data-affil~="4"],
+.paper-item:has([data-affil~="5"]:hover) [data-affil~="5"],
+.paper-item:has([data-affil~="6"]:hover) [data-affil~="6"],
+.schedule-talk-list li:has([data-affil~="1"]:hover) [data-affil~="1"],
+.schedule-talk-list li:has([data-affil~="2"]:hover) [data-affil~="2"],
+.schedule-talk-list li:has([data-affil~="3"]:hover) [data-affil~="3"],
+.schedule-talk-list li:has([data-affil~="4"]:hover) [data-affil~="4"],
+.schedule-talk-list li:has([data-affil~="5"]:hover) [data-affil~="5"],
+.schedule-talk-list li:has([data-affil~="6"]:hover) [data-affil~="6"],
+.author.affil-pinned,
+.affil.affil-pinned {
+    background-color: var(--color-accent);
+    color: var(--color-cream);
 }
