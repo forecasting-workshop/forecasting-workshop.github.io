@@ -621,6 +621,65 @@ footer a:hover {
     font-style: italic;
 }
 
+/* Schedule oral-presentation talk dropdowns */
+.schedule-talks > summary {
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+}
+
+.schedule-talks > summary::-webkit-details-marker {
+    display: none;
+}
+
+.schedule-talks > summary::after {
+    content: "+";
+    margin-left: 0.5rem;
+    color: var(--color-accent);
+    font-weight: 400;
+}
+
+.schedule-talks[open] > summary::after {
+    content: "\2212";
+}
+
+.schedule-talks > summary:hover {
+    color: var(--color-accent);
+}
+
+.schedule-talk-list {
+    margin: 0.75rem 0 0.25rem;
+    padding-left: 1.4rem;
+}
+
+.schedule-talk-list li {
+    margin-bottom: 0.6rem;
+}
+
+.schedule-talk-list li:last-child {
+    margin-bottom: 0;
+}
+
+.schedule-talk-list a {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.schedule-talk-list a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.schedule-talk-authors {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--color-ink-light);
+    line-height: 1.4;
+    margin-top: 0.15rem;
+}
+
 /* Organizer compact grid */
 .organizer-grid {
     display: grid;
@@ -1011,4 +1070,13 @@ footer a:hover {
     color: var(--color-ink-light);
     line-height: 1.4;
     margin-top: 0.2rem;
+}
+
+.paper-affil {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--color-ink-light);
+    font-style: italic;
+    line-height: 1.4;
+    margin-top: 0.1rem;
 }
