@@ -43,13 +43,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar-inner {
-    max-width: 1140px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0.875rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    gap: 1.75rem;
 }
 
 .navbar-brand {
@@ -62,13 +62,15 @@ h1, h2, h3, h4, h5 {
 
 .navbar-links {
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: nowrap;
+    gap: 1.15rem;
 }
 
 .navbar-link {
     color: var(--color-cream);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: 0.84rem;
+    white-space: nowrap;
     opacity: 0.85;
     transition: opacity 0.2s;
 }
@@ -1119,4 +1121,71 @@ footer a:hover {
 .affil.affil-pinned {
     background-color: var(--color-accent);
     color: var(--color-cream);
+}
+
+/* ===== OpenReview ID pill on accepted papers ===== */
+.paper-item {
+    padding-left: 3.5rem;
+}
+.paper-item::before {
+    content: "#" attr(data-orid);
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1;
+    top: 0.72rem;
+    color: var(--color-accent);
+    background-color: var(--color-cream-dark);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    padding: 0.18rem 0.4rem;
+    letter-spacing: 0.01em;
+}
+
+/* ===== Poster Session ===== */
+.pb-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    justify-content: center;
+    margin: 1.25rem 0 0.85rem;
+}
+.pb-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.85rem;
+    color: var(--color-ink);
+}
+.pb-sw {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.pb-sw.pb-spot { background-color: #e07b12; }
+.pb-sw.pb-oral { background-color: #2f63e0; }
+.pb-sw.pb-post { background-color: #2c9c5d; }
+.poster-map {
+    margin: 0;
+    text-align: center;
+}
+.poster-map img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background-color: #ffffff;
+    display: block;
+}
+.poster-map figcaption {
+    font-size: 0.8rem;
+    color: var(--color-ink-light);
+    font-style: italic;
+    margin-top: 0.6rem;
+}
+
+@media (max-width: 600px) {
+    .paper-item { padding-left: 3.2rem; }
 }
