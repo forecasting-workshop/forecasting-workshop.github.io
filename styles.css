@@ -118,9 +118,36 @@ h1, h2, h3, h4, h5 {
     padding: 0 1.5rem;
 }
 
+/* Announcement Banner */
+.announcement-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 3.4rem; /* clear the fixed navbar */
+    padding: 0.7rem 1.5rem;
+    background-color: var(--color-accent);
+    color: var(--color-cream);
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color 0.2s;
+}
+
+.announcement-banner:hover {
+    background-color: var(--color-ink-light);
+}
+
+.announcement-banner svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
 /* Hero Section */
 .hero {
-    padding-top: 7rem;
+    padding-top: 3.5rem;
     padding-bottom: 4rem;
     border-bottom: 2px solid var(--color-border);
     text-align: center;
