@@ -258,6 +258,32 @@ h1, h2, h3, h4, h5 {
     gap: 0.5rem;
 }
 
+.hero-note {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.75rem;
+    font-size: 1rem;
+    color: var(--color-ink-light);
+}
+
+.hero-note i {
+    color: var(--color-accent);
+}
+
+.hero-note a {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.hero-note a:hover {
+    color: var(--color-ink);
+}
+
 /* Sections */
 section {
     padding: 3rem 0;
