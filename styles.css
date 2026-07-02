@@ -63,13 +63,13 @@ h1, h2, h3, h4, h5 {
 .navbar-links {
     display: flex;
     flex-wrap: nowrap;
-    gap: 1.15rem;
+    gap: 2.25rem;
 }
 
 .navbar-link {
     color: var(--color-cream);
     text-decoration: none;
-    font-size: 0.84rem;
+    font-size: 1.05rem;
     white-space: nowrap;
     opacity: 0.85;
     transition: opacity 0.2s;
@@ -77,6 +77,28 @@ h1, h2, h3, h4, h5 {
 
 .navbar-link:hover {
     opacity: 1;
+}
+
+.navbar-link.active {
+    opacity: 1;
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 2px;
+}
+
+/* Center the nav links on desktop, keeping the brand pinned to the left */
+@media (min-width: 769px) {
+    .navbar-inner {
+        position: relative;
+        justify-content: center;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        left: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 /* Mobile menu */
@@ -296,6 +318,55 @@ section {
     padding-bottom: 0.75rem;
     border-bottom: 2px solid var(--color-border);
     display: inline-block;
+    position: relative;
+}
+
+/* Section deep-link anchors */
+.anchor-link {
+    position: absolute;
+    left: calc(100% + 0.4rem);
+    /* span only the text line (exclude the title's padding-bottom) and center the icon on it */
+    top: 0;
+    bottom: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-accent);
+    opacity: 0;
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+}
+
+.section-title:hover .anchor-link,
+.anchor-link:hover,
+.anchor-link:focus {
+    opacity: 1;
+}
+
+.anchor-link [data-lucide] {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+/* "Copied!" confirmation shown after clicking a deep-link icon */
+.anchor-link.copied {
+    opacity: 1;
+}
+
+.anchor-link.copied::after {
+    content: "Copied!";
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 0.35rem);
+    transform: translateX(-50%);
+    padding: 0.15rem 0.45rem;
+    border-radius: 4px;
+    background-color: var(--color-accent);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+    pointer-events: none;
 }
 
 .section-intro p {
@@ -347,12 +418,9 @@ section {
     font-weight: 600;
 }
 
-/* Content Cards/Boxes */
+/* Content blocks (boxless — flat, consistent with section intros) */
 .content-box {
-    border: 1px solid var(--color-border);
-    padding: 1.5rem;
     margin-bottom: 1.5rem;
-    background-color: var(--color-cream);
 }
 
 .content-box h3 {

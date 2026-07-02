@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About | AI Forecasting Workshop, ICML 2026</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="site.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-brand">AI Forecasting Workshop</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="navbar-links" id="navLinks">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="papers.html" class="navbar-link">Papers</a>
+                <a href="about.html" class="navbar-link active" aria-current="page">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Announcement Banner -->
+    <a class="announcement-banner" href="https://forecastingmarkets.org/" target="_blank">
+        <i data-lucide="trending-up"></i>
+        <span><strong>Prophet Markets is live!</strong> Trade forecasts on workshop questions with $50 in virtual money &mdash; top 3 forecasters win prizes &rarr;</span>
+    </a>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About the Workshop<a class="anchor-link" href="#about" aria-label="Copy link to this section" title="Copy link to this section"><i data-lucide="link"></i></a></h2>
+                <div class="section-intro">
+                    <p>
+                        Forecasting has a rich tradition in ML, spanning key areas such as time-series analysis, online learning, data-driven decisions and quantitative finance. Recent advances in foundation models, however, raise a qualitatively new question: <i>can general-purpose AI systems reliably anticipate future events across diverse real-world domains?</i> Indeed, forecasting is often viewed as a hallmark of sophisticated intelligence that requires internalizing patterns in dynamic environments and reasoning about consequences in the noisy real world, and we are witnessing a growing research efforts on advancing and benchmarking  forecasting capabilities of AI systems.
+                    </p>
+                    <p>
+                        Motivated by its deep roots and emerging paradigms, we envision forecasting as an exciting research program that requires lens from <b>foundation models, agentic design, benchmarking, probabilistic reasoning, information retrieval, regret minimization, world modeling, etc.</b>  As the AI community seeks the next frontier in AI capabilities, this workshop aims to bring together researchers across machine learning, statistics, economics, finance and others  to explore forecasting both as a foundational technical challenge and as a core capability of general-purpose AI systems.
+                    </p>
+                </div>
+                <!-- <div class="content-box mt-2">
+                    <h3>Social Impact</h3>
+                    <p>
+                        Reliable forecasting under uncertainty is central to many high-stakes societal domains and improved AI forecasting systems could support better decision-making, enhance market efficiency. However, overconfident or poorly calibrated forecasts may amplify misinformation or introduce systemic risks. By emphasizing uncertainty, calibration, and outcome-grounded evaluation, this workshop promotes responsible development and deployment of forecasting-capable AI systems, and encourages discussion of safeguards and best practices for socially impactful forecasting applications.
+                    </p>
+                </div> -->
+
+                <!-- Topics of Interest -->
+                <div class="subsection">
+                    <h3 class="subsection-title">Topics of Interest</h3>
+                    <p class="mb-1">The main topics of our workshop include, but are not limited to, the following aspects:</p>
+                    <ul class="topics-list">
+                        <li><strong>Architectures:</strong> agentic systems, LLM-as-a-Prophet, foundation models and world models.</li>
+                        <li><strong>Evaluation:</strong> automated event generation, metrics and benchmark design.</li>
+                        <li><strong>Reasoning:</strong> probabilistic reasoning, calibration, causal and temporal inference.</li>
+                        <li><strong>Retrieval:</strong> search architecture, credibility assessment and retrieval-augmented generation.</li>
+                        <li><strong>Foundations:</strong> scoring rules, online learning, and decision-theoretic frameworks.</li>
+                        <li><strong>Markets &amp; Society:</strong> prediction markets, societal impacts of AI-driven forecasting.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="organizers">
+            <div class="container">
+                <h2 class="section-title">Organizing Committee<a class="anchor-link" href="#organizers" aria-label="Copy link to this section" title="Copy link to this section"><i data-lucide="link"></i></a></h2>
+
+                <div class="organizer-grid">
+                    <!-- Organizer 1 -->
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="img/haifeng_xu.png" alt="Haifeng Xu" />
+                        </div>
+                        <h3>Haifeng Xu</h3>
+                        <p>Assistant Professor<br/>University of Chicago</p>
+                    </div>
+
+                    <!-- Organizer 2 -->
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="img/jibang_wu.jpg" alt="Jibang Wu" />
+                        </div>
+                        <h3>Jibang Wu</h3>
+                        <p>Assistant Professor<br/>New York University, Shanghai</p>
+                    </div>
+
+                    <!-- Organizer 3 -->
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="img/ruslan_salakhutdinov.jpg" alt="Ruslan Salakhutdinov" />
+                        </div>
+                        <h3>Ruslan Salakhutdinov</h3>
+                        <p>Professor<br/>Carnegie Mellon University</p>
+                    </div>
+
+                    <!-- Organizer 4 -->
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="img/star_li.png" alt="Star Li" />
+                        </div>
+                        <h3>Star Li</h3>
+                        <p>PhD Student<br/>University of Chicago</p>
+                    </div>
+
+                    <!-- Organizer 5 -->
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="img/ezra_karger.png" alt="Ezra Karger" />
+                        </div>
+                        <h3>Ezra Karger</h3>
+                        <p>Director of Research<br/>Forecasting Research Institute</p>
+                    </div>
+
+                    <!-- Organizer 6 -->
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="img/nicolai_ouporov.png" alt="Nicolai Ouporov" />
+                        </div>
+                        <h3>Nicolai Ouporov</h3>
+                        <p>Co-founder &amp; CEO<br/>Fleet AI</p>
+                    </div>
+
+                    <!-- Organizer 7 -->
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="img/simon_mahns.jpg" alt="Simon Mahns" />
+                        </div>
+                        <h3>Simon Mahns</h3>
+                        <p>Researcher<br/>Axiom Math</p>
+                    </div>
+
+                    <!-- Organizer 8 -->
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="img/anri_gu.png" alt="Anri Gu" />
+                        </div>
+                        <h3>Anri Gu</h3>
+                        <p>PhD Student<br/>University of Chicago</p>
+                    </div>
+
+                    <!-- Organizer 9 -->
+                    <div class="organizer-card">
+                        <div class="profile-image">
+                            <img src="img/qingchuan_yang.jpg" alt="Qingchuan Yang" />
+                        </div>
+                        <h3>Qingchuan Yang</h3>
+                        <p>PhD Student<br/>University of Southern California</p>
+                    </div>
+                </div>
+
+                <div class="content-box mt-2">
+                    <p class="text-small" style="margin-bottom: 0;">
+                        <strong>Contact:</strong> For all communications regarding the workshop, please contact
+                        <a href="mailto:forecastworkshop@gmail.com">forecastworkshop@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Committee section hidden
+        <section id="committee">
+            <div class="container">
+                <h2 class="section-title">Program Committee<a class="anchor-link" href="#committee" aria-label="Copy link to this section" title="Copy link to this section"><i data-lucide="link"></i></a></h2>
+                <p>The following researchers have agreed to serve as reviewers. Submissions will be handled through OpenReview.</p>
+                <div class="committee-list">
+                    <div class="committee-member">
+                        <span class="name">Minbiao Han</span>
+                        <div class="role">Research Scientist, Microsoft</div>
+                    </div>
+                    <div class="committee-member">
+                        <span class="name">Yao Fan</span>
+                        <div class="role">Assistant Professor, UNC</div>
+                    </div>
+                    <div class="committee-member">
+                        <span class="name">Siddarth Srinivasan</span>
+                        <div class="role">Post-doc, Harvard</div>
+                    </div>
+                    <div class="committee-member">
+                        <span class="name">Seyed A. Esmaeili</span>
+                        <div class="role">Post-doc, UChicago</div>
+                    </div>
+                    <div class="committee-member">
+                        <span class="name">Ganghua Wang</span>
+                        <div class="role">Post-doc, UChicago</div>
+                    </div>
+                    <div class="committee-member">
+                        <span class="name">Kelly He</span>
+                        <div class="role">PhD Student, CMU</div>
+                    </div>
+                    <div class="committee-member">
+                        <span class="name">Brandon Trabucco</span>
+                        <div class="role">PhD Student, CMU</div>
+                    </div>
+                    <div class="committee-member">
+                        <span class="name">Fahim Tajwar</span>
+                        <div class="role">PhD Student, CMU</div>
+                    </div>
+                    <div class="committee-member">
+                        <span class="name">Yuwei Cheng</span>
+                        <div class="role">PhD Student, UChicago</div>
+                    </div>
+                    <div class="committee-member">
+                        <span class="name">Aditya Prasad</span>
+                        <div class="role">PhD Student, UChicago</div>
+                    </div>
+                    <div class="committee-member">
+                        <span class="name">Alec Sun</span>
+                        <div class="role">PhD Student, UChicago</div>
+                    </div>
+                    <div class="committee-member">
+                        <span class="name">Anri Gu</span>
+                        <div class="role">PhD Student, UChicago</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <section id="sponsors">
+            <div class="container">
+                <h2 class="section-title">Sponsors<a class="anchor-link" href="#sponsors" aria-label="Copy link to this section" title="Copy link to this section"><i data-lucide="link"></i></a></h2>
+                <p>We gratefully acknowledge the support of our sponsors, whose generosity makes the workshop, the hackathon, and our paper awards possible.</p>
+                <div class="sponsor-grid">
+                    <a href="https://kalshi.com/" class="sponsor-card" target="_blank" title="Kalshi">
+                        <img src="img/kalshi_logo.svg" alt="Kalshi" />
+                    </a>
+                    <a href="https://www.fleetai.com/" class="sponsor-card" target="_blank" title="Fleet AI">
+                        <img src="img/fleetai_logo.svg" alt="Fleet AI" />
+                    </a>
+                    <a href="https://www.causallabs.ai/" class="sponsor-card" target="_blank" title="Causal Labs">
+                        <img src="img/causallabs_logo.svg" alt="Causal Labs" />
+                    </a>
+                    <a href="https://sig.com/" class="sponsor-card" target="_blank" title="Susquehanna International Group (SIG)">
+                        <img src="img/susquehanna_logo.png" alt="Susquehanna International Group (SIG)" />
+                    </a>
+                </div>
+                <p class="text-muted text-small mt-2">Interested in sponsoring? Reach out at <a href="mailto:forecastworkshop@gmail.com">forecastworkshop@gmail.com</a>.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact<a class="anchor-link" href="#contact" aria-label="Copy link to this section" title="Copy link to this section"><i data-lucide="link"></i></a></h2>
+                <div class="content-box">
+                    <p><strong>Email:</strong> <a href="mailto:forecastworkshop@gmail.com">forecastworkshop@gmail.com</a></p>
+                    <p style="margin-bottom: 0;"><strong>Follow us:</strong> Updates and announcements will be posted on this website and through the organizers' channels.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p style="font-family: 'Libre Baskerville', serif; margin-bottom: 0.25rem;">Workshop on AI Forecasting</p>
+                    <p class="text-small" style="opacity: 0.7;">ICML 2026 · Seoul, South Korea</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

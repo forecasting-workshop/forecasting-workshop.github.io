@@ -8,27 +8,21 @@
     <link href="styles.css" rel="stylesheet" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="ascii-bg.js" defer></script>
+    <script src="site.js" defer></script>
 </head>
 <body>
 
     <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-inner">
-            <a href="#" class="navbar-brand">AI Forecasting Workshop</a>
+            <a href="index.html" class="navbar-brand">AI Forecasting Workshop</a>
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
                 <i data-lucide="menu"></i>
             </button>
             <div class="navbar-links" id="navLinks">
-                <a href="#about" class="navbar-link">About</a>
-                <a href="#cv-submission" class="navbar-link">CV Submission</a>
-                <a href="#speakers" class="navbar-link">Speakers</a>
-                <a href="#schedule" class="navbar-link">Schedule</a>
-                <a href="#papers" class="navbar-link">Accepted Papers</a>
-                <a href="#posters" class="navbar-link">Poster Session</a>
-                <a href="#organizers" class="navbar-link">Organizers</a>
-                <a href="#cfp" class="navbar-link">Call for Papers</a>
-                <a href="#faq" class="navbar-link">FAQ</a>
-                <a href="#contact" class="navbar-link">Contact</a>
+                <a href="index.html" class="navbar-link active" aria-current="page">Home</a>
+                <a href="papers.html" class="navbar-link">Papers</a>
+                <a href="about.html" class="navbar-link">About</a>
             </div>
         </div>
     </nav>
@@ -59,56 +53,27 @@
                     <span>Grand Ballroom 104&ndash;105</span>
                 </span>
             </div>
-            <p class="hero-note">
-                <i data-lucide="trending-up"></i>
-                Trade the future of forecasting on <a href="https://forecastingmarkets.org/markets" target="_blank">Prophet Markets</a> &mdash; our virtual prediction market.
-            </p>
         </div>
     </header>
 
     <main>
-        <!-- News Section -->
         <section id="news">
             <div class="container">
                 <details class="collapse-section" open>
-                <summary class="section-title collapse-title">News</summary>
+                <summary class="section-title collapse-title">News<a class="anchor-link" href="#news" aria-label="Copy link to this section" title="Copy link to this section"><i data-lucide="link"></i></a></summary>
                 <div class="content-box">
                     <ul class="news-list">
                         <li>
                             <span class="news-date">July 3, 2026</span>
-                            <strong>Prophet Markets is live:</strong> trade the future of forecasting with virtual money at <a href="https://forecastingmarkets.org/" target="_blank">forecastingmarkets.org</a>. The top three forecasters on the leaderboard win prizes: <strong>1st place</strong> &mdash; choice of Meta glasses (Gen&nbsp;2), AirPods Pro&nbsp;3, or a DJI Neo (~$300 value); <strong>2nd place</strong> &mdash; choice of the LEGO World Cup Trophy set or a Kindle Paperwhite (~$200 value); <strong>3rd place</strong> &mdash; choice of an AirTag 4-pack or an Anker MagGo wireless power bank (~$100 value). <em>Prizes are subject to terms and conditions &mdash; including but not limited to a minimum number of participants, a minimum number of trades, and similar requirements &mdash; as determined by the workshop organizers.</em>
+                            <strong>Prophet Markets is live:</strong> trade the future of forecasting with virtual money at <a href="https://forecastingmarkets.org/" target="_blank">forecastingmarkets.org</a>. Everyone who registers for the workshop and submits their CV through <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBjtOL9gdQ5hFGNm-nx3KTjF426cWQzAk1caTR_MmJjx-UPw/viewform?usp=dialog" target="_blank">this form</a> gets <strong>100 credits</strong> to start trading, and top forecasters win prizes &mdash; see the <a href="#attend">Attend</a> section for details.
                         </li>
                         <li>
                             <span class="news-date">June 28, 2026</span>
                             <strong>Poster session details posted:</strong> the poster session runs during lunch (<strong>12:15&ndash;13:30</strong>) in <strong>Hall&nbsp;A (1F)</strong>. Find your board zone on the <a href="#posters">hall map</a> &mdash; spotlights on 1408&ndash;1412, orals on 1508&ndash;1510, and posters on the remaining boards. Put your poster up anywhere within your section; tape will be provided at the workshop.
                         </li>
                         <li>
-                            <span class="news-date">June 12, 2026</span>
-                            <strong>CV collection for sponsor resume book:</strong> as part of our collaboration with our workshop sponsors, we are collecting (optional) CVs from authors and participants who may be interested in potential opportunities with them. If you are open to being considered for relevant research, internship, collaboration, or career opportunities, please upload your CV through <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBjtOL9gdQ5hFGNm-nx3KTjF426cWQzAk1caTR_MmJjx-UPw/viewform?usp=dialog" target="_blank">this form</a>. Sharing your CV is completely optional and will not affect your paper, presentation, or participation in the workshop.
-                        </li>
-                        <li>
-                            <span class="news-date">May 18, 2026</span>
-                            <strong>Hackathon results:</strong> congratulations to <strong>Hanson Wen</strong> (UC Berkeley) and <strong>James Gui</strong> (USC), winners of the <a href="https://www.prophethacks.com/" target="_blank">AI Forecasting Hackathon</a> (May 16&ndash;17, 2026)! They will present their winning forecasting agent during the Hackathon Winner Presentation at the workshop. Congratulations also to runner-up <strong>Shirish Chinchanikar</strong> (UChicago).
-                        </li>
-                        <li>
-                            <span class="news-date">May 10, 2026</span>
-                            <strong>Abstract deadline extended:</strong> by popular request, we have extended the abstract registration deadline to <strong>May 11, 2026 (11:59 PM UTC)</strong>. The full submission deadline remains <strong>May 13, 2026 (11:59 PM UTC)</strong>. All deadlines are in UTC (not AoE).
-                        </li>
-                        <li>
-                            <span class="news-date">April 21, 2026</span>
-                            Submissions are now open on <a href="https://openreview.net/group?id=ICML.cc/2026/Workshop/Forecast" target="_blank">OpenReview</a>! The Best Paper award will receive <strong>$1,000</strong> and the Runner-Up <strong>$500</strong> (tentative).
-                        </li>
-                        <li>
-                            <span class="news-date">April 2, 2026</span>
-                            The <a href="https://openreview.net/group?id=ICML.cc/2026/Workshop/Forecast" target="_blank">OpenReview submission portal</a> is now live! Abstract registration deadline is <strong>May 8, 2026</strong> and the full submission deadline is <strong>May 13, 2026</strong>.
-                        </li>
-                        <li>
-                            <span class="news-date">March 25, 2026</span>
-                            We are co-organizing the <a href="https://www.prophethacks.com/" target="_blank">AI Forecasting Hackathon</a> (May 16&ndash;17, 2026) &mdash; build AI agents that predict the future and compete on the Prophet Arena leaderboard. Top teams will be invited to present at our ICML workshop. <a href="https://www.prophethacks.com/" target="_blank">Learn more &amp; apply</a>.
-                        </li>
-                        <li>
-                            <span class="news-date">March 20, 2026</span>
-                            Our workshop <em>Forecasting as a New Frontier of Intelligence</em> has been accepted at <strong>ICML 2026</strong> in Seoul, South Korea!
+                            <span class="news-date">May 20, 2026</span>
+                            <strong>Decisions are out:</strong> notifications have been sent to all authors. Congratulations to the authors of accepted papers &mdash; check out the full list in the <a href="papers.html#papers">Accepted Papers</a> section below.
                         </li>
                     </ul>
                 </div>
@@ -116,56 +81,9 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <h2 class="section-title">About the Workshop</h2>
-                <div class="section-intro">
-                    <p>
-                        Forecasting has a rich tradition in ML, spanning key areas such as time-series analysis, online learning, data-driven decisions and quantitative finance. Recent advances in foundation models, however, raise a qualitatively new question: <i>can general-purpose AI systems reliably anticipate future events across diverse real-world domains?</i> Indeed, forecasting is often viewed as a hallmark of sophisticated intelligence that requires internalizing patterns in dynamic environments and reasoning about consequences in the noisy real world, and we are witnessing a growing research efforts on advancing and benchmarking  forecasting capabilities of AI systems.
-                    </p>
-                    <p>
-                        Motivated by its deep roots and emerging paradigms, we envision forecasting as an exciting research program that requires lens from <b>foundation models, agentic design, benchmarking, probabilistic reasoning, information retrieval, regret minimization, world modeling, etc.</b>  As the AI community seeks the next frontier in AI capabilities, this workshop aims to bring together researchers across machine learning, statistics, economics, finance and others  to explore forecasting both as a foundational technical challenge and as a core capability of general-purpose AI systems.
-                    </p>
-                </div>
-                <!-- <div class="content-box mt-2">
-                    <h3>Social Impact</h3>
-                    <p>
-                        Reliable forecasting under uncertainty is central to many high-stakes societal domains and improved AI forecasting systems could support better decision-making, enhance market efficiency. However, overconfident or poorly calibrated forecasts may amplify misinformation or introduce systemic risks. By emphasizing uncertainty, calibration, and outcome-grounded evaluation, this workshop promotes responsible development and deployment of forecasting-capable AI systems, and encourages discussion of safeguards and best practices for socially impactful forecasting applications.
-                    </p>
-                </div> -->
-
-                <!-- Topics of Interest -->
-                <div class="subsection">
-                    <h3 class="subsection-title">Topics of Interest</h3>
-                    <p class="mb-1">The main topics of our workshop include, but are not limited to, the following aspects:</p>
-                    <ul class="topics-list">
-                        <li><strong>Architectures:</strong> agentic systems, LLM-as-a-Prophet, foundation models and world models.</li>
-                        <li><strong>Evaluation:</strong> automated event generation, metrics and benchmark design.</li>
-                        <li><strong>Reasoning:</strong> probabilistic reasoning, calibration, causal and temporal inference.</li>
-                        <li><strong>Retrieval:</strong> search architecture, credibility assessment and retrieval-augmented generation.</li>
-                        <li><strong>Foundations:</strong> scoring rules, online learning, and decision-theoretic frameworks.</li>
-                        <li><strong>Markets &amp; Society:</strong> prediction markets, societal impacts of AI-driven forecasting.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- CV Submission Section -->
-        <section id="cv-submission">
-            <div class="container">
-                <h2 class="section-title">CV Submission</h2>
-                <div class="content-box">
-                    <p>Thank you for contributing to our workshop! As part of our collaboration with our workshop sponsors, we are collecting (optional) CVs from authors/participants who may be interested in potential opportunities with them.</p>
-                    <p style="margin-bottom: 0;">If you are open to being considered for relevant research, internship, collaboration, or career opportunities, please upload your CV through <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBjtOL9gdQ5hFGNm-nx3KTjF426cWQzAk1caTR_MmJjx-UPw/viewform?usp=dialog" target="_blank">this form</a>. Sharing your CV is completely optional and will not affect your paper, presentation, or participation in the workshop.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Invited Speakers Section -->
         <section id="speakers">
             <div class="container">
-                <h2 class="section-title">Invited Speakers</h2>
+                <h2 class="section-title">Invited Speakers<a class="anchor-link" href="#speakers" aria-label="Copy link to this section" title="Copy link to this section"><i data-lucide="link"></i></a></h2>
                 <p>Distinguished researchers from academia and industry will share their perspectives on AI forecasting.</p>
 
                 <div class="speaker-grid">
@@ -339,10 +257,9 @@
             </div>
         </section>
 
-        <!-- Schedule Section -->
         <section id="schedule">
             <div class="container">
-                <h2 class="section-title">Workshop Schedule (Tentative)</h2>
+                <h2 class="section-title">Workshop Schedule (Tentative)<a class="anchor-link" href="#schedule" aria-label="Copy link to this section" title="Copy link to this section"><i data-lucide="link"></i></a></h2>
                 <p class="mb-1">All times are in local Seoul time (KST).</p>
                 <table class="data-table">
                     <thead>
@@ -456,723 +373,62 @@
             </div>
         </section>
 
-        <!-- Accepted Papers Section -->
-        <section id="papers">
+        <section id="attend">
             <div class="container">
-                <h2 class="section-title">Accepted Papers</h2>
+                <h2 class="section-title">Attend<a class="anchor-link" href="#attend" aria-label="Copy link to this section" title="Copy link to this section"><i data-lucide="link"></i></a></h2>
                 <div class="section-intro">
-                    <p>
-                        We received a strong set of submissions and are delighted to announce the 84 accepted papers below. Titles link to the corresponding OpenReview page. Best Paper and Runner-Up awards will be announced during the closing session.
-                    </p>
-                </div>
-                <details class="subsection paper-group">
-                    <summary class="subsection-title collapse-title">Oral Presentations <span class="paper-count">(5)</span></summary>
-                    <ul class="paper-list">
-                        <li class="paper-item" data-orid="15">
-                            <a class="paper-title" href="https://openreview.net/forum?id=Iw4jKx6hIx" target="_blank">Agentic Forecasting using Sequential Bayesian Updating of Linguistic Beliefs</a>
-                            <span class="paper-authors"><span class="author" data-affil="1">Kevin Murphy</span></span>
-                            <span class="paper-affil"><span class="affil" data-affil="1">Google</span></span>
-                        </li>
-                        <li class="paper-item" data-orid="117">
-                            <a class="paper-title" href="https://openreview.net/forum?id=VF3SHjyHB5" target="_blank">Allocation, Not Volume: Test-Time Compute for Agentic Forecasting</a>
-                            <span class="paper-authors"><span class="author" data-affil="1">Atin Aboutorabi</span>, <span class="author" data-affil="1">Gaetan de Rassenfosse</span>, <span class="author" data-affil="1">Nicolas Flammarion</span>, <span class="author" data-affil="2">Maksym Andriushchenko</span></span>
-                            <span class="paper-affil"><span class="affil" data-affil="1">EPFL</span> &middot; <span class="affil" data-affil="2">ELLIS Institute T&uuml;bingen / Max Planck Institute for Intelligent Systems</span></span>
-                        </li>
-                        <li class="paper-item" data-orid="118">
-                            <a class="paper-title" href="https://openreview.net/forum?id=WwxELkT48R" target="_blank">Forecasting Emerges from Auto-Regressive Pretraining: Latent Predictive Structure in Language Models</a>
-                            <span class="paper-authors"><span class="author" data-affil="1">Alexis Roger</span>, <span class="author" data-affil="2">Prateek Humane</span>, <span class="author" data-affil="3">Zhenghan Tai</span>, <span class="author" data-affil="2 4">Gwen Legate</span>, <span class="author" data-affil="2">Andrei Mircea</span>, <span class="author" data-affil="5">Vasilii Feofanov</span>, <span class="author" data-affil="2">Irina Rish</span></span>
-                            <span class="paper-affil"><span class="affil" data-affil="1">McGill University</span> &middot; <span class="affil" data-affil="2">Mila, Universit&eacute; de Montr&eacute;al</span> &middot; <span class="affil" data-affil="3">University of Toronto</span> &middot; <span class="affil" data-affil="4">Concordia University</span> &middot; <span class="affil" data-affil="5">Huawei Noah's Ark Lab</span></span>
-                        </li>
-                        <li class="paper-item" data-orid="10">
-                            <a class="paper-title" href="https://openreview.net/forum?id=UuKdJjQcfM" target="_blank">Forecasting Motion in the Wild</a>
-                            <span class="paper-authors"><span class="author" data-affil="1">Neerja Thakkar</span>, <span class="author" data-affil="2">Shiry Ginosar</span>, <span class="author" data-affil="1">Jacob C Walker</span>, <span class="author" data-affil="3">Jitendra Malik</span>, <span class="author" data-affil="1">Joao Carreira</span>, <span class="author" data-affil="1">Carl Doersch</span></span>
-                            <span class="paper-affil"><span class="affil" data-affil="1">Google DeepMind</span> &middot; <span class="affil" data-affil="2">Toyota Technological Institute at Chicago</span> &middot; <span class="affil" data-affil="3">UC Berkeley</span></span>
-                        </li>
-                        <li class="paper-item" data-orid="124">
-                            <a class="paper-title" href="https://openreview.net/forum?id=s0F0l0Jl7e" target="_blank">FutureSim: Replaying World Events to Evaluate Adaptive Agents</a>
-                            <span class="paper-authors"><span class="author" data-affil="1 2">Shashwat Goel</span>, <span class="author" data-affil="2">Nikhil Chandak</span>, <span class="author" data-affil="1 3">Arvindh Arun</span>, <span class="author" data-affil="4">Ameya Prabhu</span>, <span class="author" data-affil="3">Steffen Staab</span>, <span class="author" data-affil="2">Moritz Hardt</span>, <span class="author" data-affil="1 2">Maksym Andriushchenko</span>, <span class="author" data-affil="1 2">Jonas Geiping</span></span>
-                            <span class="paper-affil"><span class="affil" data-affil="1">ELLIS Institute T&uuml;bingen</span> &middot; <span class="affil" data-affil="2">Max Planck Institute for Intelligent Systems</span> &middot; <span class="affil" data-affil="3">University of Stuttgart</span> &middot; <span class="affil" data-affil="4">University of T&uuml;bingen</span></span>
-                        </li>
-                    </ul>
-                </details>
-                <details class="subsection paper-group">
-                    <summary class="subsection-title collapse-title">Spotlights <span class="paper-count">(10)</span></summary>
-                    <ul class="paper-list">
-                        <li class="paper-item" data-orid="34">
-                            <a class="paper-title" href="https://openreview.net/forum?id=hboiVmIX3a" target="_blank">Approximate Recall, Approximate Forecasts: Recall as a Diagnostic for LLM Forecasting Errors</a>
-                            <span class="paper-authors">Shubhaankar Gupta, Prashanth Bhaskara, Seojoon Yeon</span>
-                        </li>
-                        <li class="paper-item" data-orid="93">
-                            <a class="paper-title" href="https://openreview.net/forum?id=TSA5kRUKZv" target="_blank">Beyond Accuracy: Can LLM Forecasters Profit on Prediction Markets?</a>
-                            <span class="paper-authors">Steven Henry, Jillian Ross, Alana Marzoev, Eric So, Andrew Lo</span>
-                        </li>
-                        <li class="paper-item" data-orid="125">
-                            <a class="paper-title" href="https://openreview.net/forum?id=fHxZNsmUxB" target="_blank">Curating the Future: A Scalable Recipe for Training Open-Ended Forecasters</a>
-                            <span class="paper-authors">Nikhil Chandak, Shashwat Goel, Ameya Prabhu, Moritz Hardt, Jonas Geiping</span>
-                        </li>
-                        <li class="paper-item" data-orid="39">
-                            <a class="paper-title" href="https://openreview.net/forum?id=V54NQF6qgQ" target="_blank">Decentralized Aggregation of LLM Predictions via Wagering Mechanisms</a>
-                            <span class="paper-authors">Yuhong Luo, David Pennock, Xintong Wang</span>
-                        </li>
-                        <li class="paper-item" data-orid="148">
-                            <a class="paper-title" href="https://openreview.net/forum?id=pTiRAPtDzK" target="_blank">Forecast-to-Trade: Hierarchical Reinforcement Learning for Decision-Aware Financial Forecasting</a>
-                            <span class="paper-authors">Zijie Zhao, Roy E. Welsch</span>
-                        </li>
-                        <li class="paper-item" data-orid="46">
-                            <a class="paper-title" href="https://openreview.net/forum?id=gg3ak5iwPb" target="_blank">ForecastBench-Sim: A Simulated-World Forecasting Benchmark</a>
-                            <span class="paper-authors">Jaeho Lee, Nick Merrill, Ezra Karger</span>
-                        </li>
-                        <li class="paper-item" data-orid="95">
-                            <a class="paper-title" href="https://openreview.net/forum?id=V4uDGayOmw" target="_blank">ForecastCompass: Guiding Agentic Forecasting with Adaptive Factor Memory</a>
-                            <span class="paper-authors">Yurui Chang, Yongkang Du, Yuanpu Cao, Jinghui Chen, Lu Lin</span>
-                        </li>
-                        <li class="paper-item" data-orid="94">
-                            <a class="paper-title" href="https://openreview.net/forum?id=vIXPxsiCID" target="_blank">Future-as-Label: Scalable Supervision from Real-World Outcomes</a>
-                            <span class="paper-authors">Benjamin Turtel, Paul Wilczewski, Kris Skotheim</span>
-                        </li>
-                        <li class="paper-item" data-orid="70">
-                            <a class="paper-title" href="https://openreview.net/forum?id=lbpDR9pj5F" target="_blank">Reaching the frontier of AI forecasting with reinforcement learning</a>
-                            <span class="paper-authors">Scott Jeen, Matthew Aitchison, Max Clark, Toby Shevlane, Ben Day</span>
-                        </li>
-                        <li class="paper-item" data-orid="183">
-                            <a class="paper-title" href="https://openreview.net/forum?id=LYSTj2Cnuu" target="_blank">When do prophets profit in prediction markets?</a>
-                            <span class="paper-authors">Anri Gu, Nicole Kagan, Alec Sun, Jibang Wu, Haifeng Xu</span>
-                        </li>
-                    </ul>
-                </details>
-                <details class="subsection paper-group">
-                    <summary class="subsection-title collapse-title">Posters <span class="paper-count">(69)</span></summary>
-                    <ul class="paper-list">
-                        <li class="paper-item" data-orid="54">
-                            <a class="paper-title" href="https://openreview.net/forum?id=QgCF3VkvCa" target="_blank">A Black-Box Reduction from Regret to Multi-Level Coverage</a>
-                            <span class="paper-authors">Tuo Liu, Edgar Dobriban, Francesco Orabona</span>
-                        </li>
-                        <li class="paper-item" data-orid="142">
-                            <a class="paper-title" href="https://openreview.net/forum?id=WH72pFAjgI" target="_blank">A Lightweight Deep Learning Approach to Spatiotemporal Heat Forecasting</a>
-                            <span class="paper-authors">Euan Marney, Linus Ericsson</span>
-                        </li>
-                        <li class="paper-item" data-orid="55">
-                            <a class="paper-title" href="https://openreview.net/forum?id=sIl7i83c68" target="_blank">Accurate Forecasts Do Not Ensure Safe Decision</a>
-                            <span class="paper-authors">Jaehyun Pyun, Seunghun Moon, Suk-Ju Kang</span>
-                        </li>
-                        <li class="paper-item" data-orid="130">
-                            <a class="paper-title" href="https://openreview.net/forum?id=wtI0bIBaAc" target="_blank">AgentRx: A Benchmark for Multimodal Clinical Forecasting with LLM Agents</a>
-                            <span class="paper-authors">Baraa Al Jorf, Farah E. Shamout</span>
-                        </li>
-                        <li class="paper-item" data-orid="43">
-                            <a class="paper-title" href="https://openreview.net/forum?id=CJd8EW3Oqj" target="_blank">Aligning LLMs with Human Uncertainty: A Beta-Bernoulli Calibrator for LLM Forecasting</a>
-                            <span class="paper-authors">Hui Dai, Ryan Teehan, Parsa Torabian, Mengye Ren</span>
-                        </li>
-                        <li class="paper-item" data-orid="41">
-                            <a class="paper-title" href="https://openreview.net/forum?id=SXVjN9VLeJ" target="_blank">Alive and Predicting: A Live Evaluation of Multi-Step Forecasting Agents</a>
-                            <span class="paper-authors">Will Wu, Hui Dai, Mengye Ren</span>
-                        </li>
-                        <li class="paper-item" data-orid="77">
-                            <a class="paper-title" href="https://openreview.net/forum?id=sla6EBQBNA" target="_blank">An adversarial tournament design for efficiently probing the frontier of AI forecasting</a>
-                            <span class="paper-authors">Ben Day, Scott Jeen, Simion-Vlad Bogolin, Max Clark, Toby Shevlane</span>
-                        </li>
-                        <li class="paper-item" data-orid="113">
-                            <a class="paper-title" href="https://openreview.net/forum?id=8YwDmls8ys" target="_blank">Analogical Deep Research: Retrieving and Integrating Historical Analogies for Foresight Analysis</a>
-                            <span class="paper-authors">Yongqiang Chen, Guangyi Chen, Yuewen Sun, Kun Zhang</span>
-                        </li>
-                        <li class="paper-item" data-orid="109">
-                            <a class="paper-title" href="https://openreview.net/forum?id=Tqos7VqQhH" target="_blank">Arbitrage-Free Forecasts from Language Models via Coherence Projection</a>
-                            <span class="paper-authors">Anany Kotawala</span>
-                        </li>
-                        <li class="paper-item" data-orid="12">
-                            <a class="paper-title" href="https://openreview.net/forum?id=Vu3NvCY2jo" target="_blank">Auditing Actionability in AI Forecasting Interfaces</a>
-                            <span class="paper-authors">Srinivas Raghav V C, Aditya Sri Ram Barnala</span>
-                        </li>
-                        <li class="paper-item" data-orid="28">
-                            <a class="paper-title" href="https://openreview.net/forum?id=JgekLYbn9w" target="_blank">Beyond Forecasting: The Belief-to-Trade Layer in Prediction-Market Agents</a>
-                            <span class="paper-authors">Issue Yishu Wang, Yuxuan Wang, Hanyang Tang</span>
-                        </li>
-                        <li class="paper-item" data-orid="35">
-                            <a class="paper-title" href="https://openreview.net/forum?id=l39W17uBcb" target="_blank">Decision-Relevant Predictions with Joint Scoring Rules</a>
-                            <span class="paper-authors">Rubi Hudson</span>
-                        </li>
-                        <li class="paper-item" data-orid="174">
-                            <a class="paper-title" href="https://openreview.net/forum?id=DPrS5jDoR3" target="_blank">DELPHYNE: A Pre-Trained Model for General and Financial Time Series</a>
-                            <span class="paper-authors">Xueying Ding, Aakriti Mittal, Achintya Gopal</span>
-                        </li>
-                        <li class="paper-item" data-orid="150">
-                            <a class="paper-title" href="https://openreview.net/forum?id=pn2Dn315u1" target="_blank">Discover then Refine: A Joint Multiple Choice Learning and Flow Matching Framework for Heat Demand Forecasting</a>
-                            <span class="paper-authors">Malek Mahjoub, Vasile-Marian Scuturici</span>
-                        </li>
-                        <li class="paper-item" data-orid="69">
-                            <a class="paper-title" href="https://openreview.net/forum?id=JAYM7AGe50" target="_blank">Diversity is the strength of the AI crowd</a>
-                            <span class="paper-authors">Matthew Aitchison, Scott Jeen, Toby Shevlane, Ben Day</span>
-                        </li>
-                        <li class="paper-item" data-orid="36">
-                            <a class="paper-title" href="https://openreview.net/forum?id=8YeXiIc44s" target="_blank">Do Language Models Update their Forecasts with New Information?</a>
-                            <span class="paper-authors">Moy Yuan, Zifeng Ding, Andreas Vlachos</span>
-                        </li>
-                        <li class="paper-item" data-orid="84">
-                            <a class="paper-title" href="https://openreview.net/forum?id=CmagUOHWQC" target="_blank">Do Time Series Foundation Model Benchmarks Hide Regime-Dependent Failures? Evidence from Traffic Speed Forecasting</a>
-                            <span class="paper-authors">Yingshuo Wang, Xian Sun, Zexin Zhuang, Yanhang Li, Zhichao Fan</span>
-                        </li>
-                        <li class="paper-item" data-orid="144">
-                            <a class="paper-title" href="https://openreview.net/forum?id=9payEItr83" target="_blank">DuoMamba: A Decomposition-Free State Space Model for Long-Term Time Series Forecasting</a>
-                            <span class="paper-authors">Anna-Alina Bondarets, Taras Rumezhak, Volodymyr Karpiv</span>
-                        </li>
-                        <li class="paper-item" data-orid="145">
-                            <a class="paper-title" href="https://openreview.net/forum?id=d3Qq4weuwz" target="_blank">Efficient Forecasting of Task Failures in LLM Agents through Adaptive Fault Injection</a>
-                            <span class="paper-authors">Vartika Sengar, Parth Thakkar, Pranoy Panda, Shrey Satapara, Emmy Liu, Vijay Viswanathan, Sho Takemori, Graham Neubig, Chaitanya Devaguptapu</span>
-                        </li>
-                        <li class="paper-item" data-orid="67">
-                            <a class="paper-title" href="https://openreview.net/forum?id=G3F96WLjgw" target="_blank">Elicitation Format Drives Divergent LLM Geopolitical Forecasts</a>
-                            <span class="paper-authors">Suhas Hariharan, George Ghetiu, Ari Weiler-Ofek, Hao Jie Pe, Tatsan Kantasit, Michal Bravansky, Raphael Tang</span>
-                        </li>
-                        <li class="paper-item" data-orid="65">
-                            <a class="paper-title" href="https://openreview.net/forum?id=jm8DOafA7D" target="_blank">Enabling Uncertainty-Aware Time-Series Forecasting in Federated Learning for Urban Water Dynamics</a>
-                            <span class="paper-authors">Golnoosh Abdollahinejad, Patrik Okanovic, Denisa-Andreea Constantinescu, Sergey Shevchik, Torsten Hoefler, David Atienza</span>
-                        </li>
-                        <li class="paper-item" data-orid="66">
-                            <a class="paper-title" href="https://openreview.net/forum?id=BscmCO2BMk" target="_blank">Evaluating Long-Form Forecasts by Their Effect on Downstream Predictions</a>
-                            <span class="paper-authors">Jeremy Qin, Nikhil Chandak, Shashwat Goel, Hardik Bhatnagar, Ameya Prabhu, Jonas Geiping, Moritz Hardt, Maksym Andriushchenko</span>
-                        </li>
-                        <li class="paper-item" data-orid="119">
-                            <a class="paper-title" href="https://openreview.net/forum?id=QqtvS8ZMhb" target="_blank">Forecasting Model Success at Inference Time: Calibrated Probabilistic Forecasts for Cost-Optimal LLM Cascades</a>
-                            <span class="paper-authors">Varun Kotte</span>
-                        </li>
-                        <li class="paper-item" data-orid="151">
-                            <a class="paper-title" href="https://openreview.net/forum?id=PK18JRw1W8" target="_blank">Forecasting Time-Varying Correlation Matrices with Large Language Models</a>
-                            <span class="paper-authors">Georgii Petrov, Ilya Novitskiy, Mironov Kirill Sergeevich, Sergey Muravyov, Valeria Efimova, Viacheslav Shalamov</span>
-                        </li>
-                        <li class="paper-item" data-orid="91">
-                            <a class="paper-title" href="https://openreview.net/forum?id=ppN6CmoNOk" target="_blank">Forecasting With LLMs: Improved Generalization Through Feature Steering</a>
-                            <span class="paper-authors">Humzah Merchant, Bradford Levy</span>
-                        </li>
-                        <li class="paper-item" data-orid="21">
-                            <a class="paper-title" href="https://openreview.net/forum?id=mUDSfYM8jv" target="_blank">Forecasts as a Behavioral Probe of Language Models</a>
-                            <span class="paper-authors">Simon Mahns, Elliot James Paschal, Nicole Kagan</span>
-                        </li>
-                        <li class="paper-item" data-orid="185">
-                            <a class="paper-title" href="https://openreview.net/forum?id=GhUK6VGW67" target="_blank">Foresight-Phys: A Benchmark for Forecasting the Results of Physical Experiments</a>
-                            <span class="paper-authors">Nikita Kazeev, Ian Babich</span>
-                        </li>
-                        <li class="paper-item" data-orid="73">
-                            <a class="paper-title" href="https://openreview.net/forum?id=N0ONKv1KfP" target="_blank">ForesightFlow: An Information Leakage Score Framework for Prediction Markets</a>
-                            <span class="paper-authors">Maksym Nechepurenko</span>
-                        </li>
-                        <li class="paper-item" data-orid="3">
-                            <a class="paper-title" href="https://openreview.net/forum?id=23WjbgikEQ" target="_blank">Forward-Chaining  Temporal Point Process</a>
-                            <span class="paper-authors">Chao Yang, Wendi Ren, Shuang Li</span>
-                        </li>
-                        <li class="paper-item" data-orid="57">
-                            <a class="paper-title" href="https://openreview.net/forum?id=7E6kblWqAP" target="_blank">From Events to Impacts: Calibrated Decomposition for LLM-Based Geopolitical Forecasting</a>
-                            <span class="paper-authors">Bernhard Escherich, Christian Schroll, Dr. La Toya Waha</span>
-                        </li>
-                        <li class="paper-item" data-orid="123">
-                            <a class="paper-title" href="https://openreview.net/forum?id=idEEtE5Jhv" target="_blank">From Marks to Narratives: Language-Augmented Spatio-Temporal Point Processes</a>
-                            <span class="paper-authors">Zheng Dong, Xiaoyue Liu</span>
-                        </li>
-                        <li class="paper-item" data-orid="99">
-                            <a class="paper-title" href="https://openreview.net/forum?id=TEKsCA3Ml0" target="_blank">From Narrative to Auditable Forecasts: An Agentic Scaffold for Probabilistic Forecasting</a>
-                            <span class="paper-authors">Yuanpu Cao, Yongkang Du, Yurui Chang, Lu Lin, Jinghui Chen</span>
-                        </li>
-                        <li class="paper-item" data-orid="153">
-                            <a class="paper-title" href="https://openreview.net/forum?id=7u0BQ2Lpv7" target="_blank">Generative Bayesian Computation for Probabilistic Forecasting with Discrete Events</a>
-                            <span class="paper-authors">Nicholas Polson, Vadim Sokolov</span>
-                        </li>
-                        <li class="paper-item" data-orid="135">
-                            <a class="paper-title" href="https://openreview.net/forum?id=KA5RdNascV" target="_blank">GENERATIVE TRAFFIC FORECASTING: PRESERVING SHOCKWAVE TOPOLOGY WITH DIFFUSION MODELS</a>
-                            <span class="paper-authors">Md. Iqramul Hoque, Md Ibrahim Khalil, Tasfia Noor Chowdhury, Tanjim Binta Hasan Jerin</span>
-                        </li>
-                        <li class="paper-item" data-orid="20">
-                            <a class="paper-title" href="https://openreview.net/forum?id=qvaYT6ZNOd" target="_blank">HMTMO-GP: Hierarchical Multi-Task Multi-Output Gaussian Processes</a>
-                            <span class="paper-authors">Yan Chen, Ti-chiun Chang, Kevin Stone</span>
-                        </li>
-                        <li class="paper-item" data-orid="104">
-                            <a class="paper-title" href="https://openreview.net/forum?id=GGhWR2ohHZ" target="_blank">How Predictable is AI Progress?</a>
-                            <span class="paper-authors">David Mayo, Abdulrahman Alabdulkareem, Albert Eaton Shaw, Colin Conwell, Andrey Gizdov, Andrei Barbu, Boris Katz, Brian Cheung</span>
-                        </li>
-                        <li class="paper-item" data-orid="172">
-                            <a class="paper-title" href="https://openreview.net/forum?id=sn6pO7YmYw" target="_blank">Iterative Computation as Anytime Forecasting: Dense Supervision for Calibrated Trajectories in Recurrent World Models</a>
-                            <span class="paper-authors">Bao N Nguyen Truong, Hoyeon Chang, Alexander Rubinstein, Seong Joon Oh</span>
-                        </li>
-                        <li class="paper-item" data-orid="86">
-                            <a class="paper-title" href="https://openreview.net/forum?id=C2gibjVzHs" target="_blank">Latent Market Dynamics: A World Model Framework for Agentic Prediction Markets</a>
-                            <span class="paper-authors">Jay Oza, Hrishikesh Yadav</span>
-                        </li>
-                        <li class="paper-item" data-orid="27">
-                            <a class="paper-title" href="https://openreview.net/forum?id=oBvLAlzGq3" target="_blank">Latent Stochastic Interpolants for Probabilistic Time Series Forecasting</a>
-                            <span class="paper-authors">Max Bourgeat, Sobihan Surendran</span>
-                        </li>
-                        <li class="paper-item" data-orid="178">
-                            <a class="paper-title" href="https://openreview.net/forum?id=mi8QiWomm3" target="_blank">Leakage-Aware Benchmarking of LLM Forecasting: Real-Time Nowcasts as the Decision-Time Input for Macro Factor Ranking</a>
-                            <span class="paper-authors">Mao Guan, Qian Chen</span>
-                        </li>
-                        <li class="paper-item" data-orid="103">
-                            <a class="paper-title" href="https://openreview.net/forum?id=TaOQd4cmKg" target="_blank">MacroBench: Measuring Frontier LLM Macroeconomic Forecasting Ability</a>
-                            <span class="paper-authors">Arjun Neervannan, Sujai Hiremath, Sumiran Singh Thakur, Guanghan Ning, Deniz Zorlu</span>
-                        </li>
-                        <li class="paper-item" data-orid="120">
-                            <a class="paper-title" href="https://openreview.net/forum?id=Vugn5qZWpq" target="_blank">Measuring Source-Induced Bias in LLM Forecasts with Prediction Markets</a>
-                            <span class="paper-authors">Mykola Khandoga, Yevhen Kostiuk, Anton Polishko, Kostiantyn Kozlov, Yurii Filipchuk, Dmytro Zamriy, Artur Kiulian</span>
-                        </li>
-                        <li class="paper-item" data-orid="129">
-                            <a class="paper-title" href="https://openreview.net/forum?id=aO9AcXA6Se" target="_blank">Mix, Don’t Pick: Why Synthetic Corpus Composition Matters for Time Series Foundation Model Pretraining</a>
-                            <span class="paper-authors">Aaryan Nagpal, Debdeep Sanyal, Dhruv Kumar, Murari Mandal, Saurabh Deshpande</span>
-                        </li>
-                        <li class="paper-item" data-orid="96">
-                            <a class="paper-title" href="https://openreview.net/forum?id=ZMEIc25o0a" target="_blank">One Token per Trade: Multi-Resolution Limit Order Book Forecasting with a Foundation Model</a>
-                            <span class="paper-authors">Srijan Sood, Maxime Kawawa-Beaudan, Zhijin Guo, Daniel Borrajo</span>
-                        </li>
-                        <li class="paper-item" data-orid="121">
-                            <a class="paper-title" href="https://openreview.net/forum?id=sgB6Jwgjod" target="_blank">OptimismBench: Measuring Forecasting Bias in Language Model Judgment</a>
-                            <span class="paper-authors">Seonglae Cho, Adriano Koshiyama</span>
-                        </li>
-                        <li class="paper-item" data-orid="159">
-                            <a class="paper-title" href="https://openreview.net/forum?id=U27ZfUx7JE" target="_blank">Outcome-Free Audits and Repairs for LLM Forecasters</a>
-                            <span class="paper-authors">Juliana Li, Diya Sreedhar</span>
-                        </li>
-                        <li class="paper-item" data-orid="177">
-                            <a class="paper-title" href="https://openreview.net/forum?id=DSXfEnYCbK" target="_blank">Period-Aware Inductive Bias Versus Scale on Influenza-like Illness Forecasting</a>
-                            <span class="paper-authors">YongKyung Oh, Alex Bui</span>
-                        </li>
-                        <li class="paper-item" data-orid="2">
-                            <a class="paper-title" href="https://openreview.net/forum?id=8ryqliR6m3" target="_blank">Physics-Informed Bidirectional Graph Networks for Traffic Prediction: Deriving Message Passing Direction from Traffic Flow Theory</a>
-                            <span class="paper-authors">Benjamin Lartey</span>
-                        </li>
-                        <li class="paper-item" data-orid="19">
-                            <a class="paper-title" href="https://openreview.net/forum?id=aqoyILOwDn" target="_blank">Polynomial Input Preconditioning for Zero-Shot Time Series Forecasting</a>
-                            <span class="paper-authors">Jerry Han, Alex Kawaja, Benjamin Cole, Elad Hazan</span>
-                        </li>
-                        <li class="paper-item" data-orid="32">
-                            <a class="paper-title" href="https://openreview.net/forum?id=Qaxb5pqRkj" target="_blank">Preference Optimization Drives Monoculture in LLM Prediction Markets</a>
-                            <span class="paper-authors">James Begin, Brendan Gho, Suman Muppavarapu, Tyson Tsay, Atharva Mohan, Afnan Shaik, Ruizhe Li, Vasu Sharma, Archana Vaidheeswaran, Kevin Zhu</span>
-                        </li>
-                        <li class="paper-item" data-orid="154">
-                            <a class="paper-title" href="https://openreview.net/forum?id=ohagh74v0a" target="_blank">Presentation Robustness for LLM Forecasters</a>
-                            <span class="paper-authors">Leon Luo</span>
-                        </li>
-                        <li class="paper-item" data-orid="62">
-                            <a class="paper-title" href="https://openreview.net/forum?id=8ZrpbYgFe6" target="_blank">Proxy Scoring Enables Benchmarking LLM Forecasters Without Waiting for Outcomes</a>
-                            <span class="paper-authors">Julius Hege, Gitta Kutyniok</span>
-                        </li>
-                        <li class="paper-item" data-orid="79">
-                            <a class="paper-title" href="https://openreview.net/forum?id=0EXEP7wrLS" target="_blank">Quantizing Time-Series Models As Dynamical Systems: Trajectory-Based Quantization Sensitivity Score</a>
-                            <span class="paper-authors">Mariya Pavlova, Harrison Bo Hua Zhu, Elizaveta Semenova, Yingzhen Li</span>
-                        </li>
-                        <li class="paper-item" data-orid="63">
-                            <a class="paper-title" href="https://openreview.net/forum?id=cqnuY2xFQl" target="_blank">Reflexivity as Prompt: Does Awareness of Self-Reinforcing Market Dynamics Improve LLMs as Financial Market Forecasters?</a>
-                            <span class="paper-authors">Eugene W Park</span>
-                        </li>
-                        <li class="paper-item" data-orid="75">
-                            <a class="paper-title" href="https://openreview.net/forum?id=WlHeFUW23D" target="_blank">Repackaging Temporal Evidence: A Unifying Interface for Temporal Prediction</a>
-                            <span class="paper-authors">Hao-Run Cai, Hao-Chen Liu, Ji-Yang Zhao, Yu-Jie Lai, Han-Jia Ye</span>
-                        </li>
-                        <li class="paper-item" data-orid="180">
-                            <a class="paper-title" href="https://openreview.net/forum?id=nb9fVwdBVI" target="_blank">RIFT: Reliability of LLM and Physics Forecasters across Time-Horizons in Coupled PDE Systems</a>
-                            <span class="paper-authors">Kuntal Thakur, Ayan Banerjee, Christian Stoddard, Majid M Sadeghi, Sandeep Gupta</span>
-                        </li>
-                        <li class="paper-item" data-orid="64">
-                            <a class="paper-title" href="https://openreview.net/forum?id=8G9ljUNQo7" target="_blank">Robustness of Multimodal Foundation-Model Forecasting for Postoperative Cancer Outcomes</a>
-                            <span class="paper-authors">KuanTing Wu</span>
-                        </li>
-                        <li class="paper-item" data-orid="47">
-                            <a class="paper-title" href="https://openreview.net/forum?id=SNjhsnUvhH" target="_blank">SC-JEPA: Stabilizing Latent Predictive Learning for Time-Series Anomaly Prediction</a>
-                            <span class="paper-authors">Yanan He, Yunshi Wen, Xin Wang, Tengfei Ma</span>
-                        </li>
-                        <li class="paper-item" data-orid="14">
-                            <a class="paper-title" href="https://openreview.net/forum?id=9iQtBHHBBx" target="_blank">SciPaths: Forecasting Pathways to Scientific Discovery</a>
-                            <span class="paper-authors">Eric Chamoun, Yizhou Chi, Yulong Chen, RUI CAO, Zifeng Ding, Michalis Korakakis, Andreas Vlachos</span>
-                        </li>
-                        <li class="paper-item" data-orid="92">
-                            <a class="paper-title" href="https://openreview.net/forum?id=oLwaBjoj3h" target="_blank">Semantics-Enhanced Retrieval-Augmented Time Series Forecasting</a>
-                            <span class="paper-authors">Shiqiao Zhou, Zipeng Wu, Holger Schöner, Edouard Fouché, IAG Wilson, Shuo Wang</span>
-                        </li>
-                        <li class="paper-item" data-orid="31">
-                            <a class="paper-title" href="https://openreview.net/forum?id=Pn1mlWbDEf" target="_blank">Simulation-Augmented Multi-Step Split Conformal Prediction for Aggregated Forecasts</a>
-                            <span class="paper-authors">Andro Sabashvili</span>
-                        </li>
-                        <li class="paper-item" data-orid="87">
-                            <a class="paper-title" href="https://openreview.net/forum?id=wFBzV0hWw1" target="_blank">StretchTime: Adaptive Time Series Forecasting via Symplectic Attention</a>
-                            <span class="paper-authors">Yubin Kim, Viresh Pati, Jevon Twitty, Vinh Pham, Shihao Yang, Jiecheng Lu</span>
-                        </li>
-                        <li class="paper-item" data-orid="38">
-                            <a class="paper-title" href="https://openreview.net/forum?id=jGrQOk2Xa0" target="_blank">Temporally Supervised Linear Probes Improve LLM Forecasts</a>
-                            <span class="paper-authors">Marius Binner</span>
-                        </li>
-                        <li class="paper-item" data-orid="45">
-                            <a class="paper-title" href="https://openreview.net/forum?id=zwDRjyd0md" target="_blank">TimeRouter: Efficient and Adaptive Routing of Time Series Foundation Models</a>
-                            <span class="paper-authors">Kanghui Ning, Yushan Jiang, Kashif Rasul, Anderson Schneider, Yuriy Nevmyvaka, Dongjin Song</span>
-                        </li>
-                        <li class="paper-item" data-orid="114">
-                            <a class="paper-title" href="https://openreview.net/forum?id=yhzJD1zUxi" target="_blank">VSTF: Vision and Sequence Models for Time-Frequency Time Series Forecasting</a>
-                            <span class="paper-authors">Junlin Liu, Yanting Yang, Ren Wang</span>
-                        </li>
-                        <li class="paper-item" data-orid="51">
-                            <a class="paper-title" href="https://openreview.net/forum?id=QSWVA0PnPi" target="_blank">What if Tomorrow is the World Cup Final? Counterfactual Time Series Forecasting with Textual Conditions</a>
-                            <span class="paper-authors">Shuqi Gu, Yongxiang Zhao, Baoyu Jing, Kan Ren</span>
-                        </li>
-                        <li class="paper-item" data-orid="40">
-                            <a class="paper-title" href="https://openreview.net/forum?id=52YiEhiL35" target="_blank">What Should We Forecast? Benchmarking Agents on Early Question Discovery</a>
-                            <span class="paper-authors">Keisuke Ueda, Veniamin Veselovsky, Robert West</span>
-                        </li>
-                        <li class="paper-item" data-orid="78">
-                            <a class="paper-title" href="https://openreview.net/forum?id=YnNHhcgORk" target="_blank">When Does Evidence Help Prompted LLM Forecasting? Evidence Access and Prompt Structure Across 12 Models</a>
-                            <span class="paper-authors">Akram Naoufel Tabet, mitja luštrek</span>
-                        </li>
-                        <li class="paper-item" data-orid="16">
-                            <a class="paper-title" href="https://openreview.net/forum?id=wT44VGxSzR" target="_blank">WorldFork: Auditable Branching Rollouts for LLM Forecasting</a>
-                            <span class="paper-authors">Hanson Wen, Shing Cheung James Gui</span>
-                        </li>
-                    </ul>
-                </details>
-            </div>
-        </section>
-
-        <!-- Poster Session Section -->
-        <section id="posters">
-            <div class="container">
-                <h2 class="section-title">Poster Session</h2>
-                <div class="section-intro">
-                    <p>
-                        The poster session runs during <strong>lunch, 12:15&ndash;13:30</strong>, in <strong>Hall&nbsp;A (1F)</strong>. Our boards are highlighted on the hall map below: <strong>spotlights</strong> on 1408&ndash;1412, <strong>orals</strong> on 1508&ndash;1510, and <strong>posters</strong> on the remaining boards (1413&ndash;1417, 1500&ndash;1517, 1600&ndash;1611). Put your poster up anywhere within your section &mdash; tape will be provided at the workshop.
-                    </p>
-                    <p style="margin-bottom: 0;">
-                        <strong>Oral presenters:</strong> a poster is optional but recommended &mdash; it's a great way to share your work with attendees who can't make the talk or who have follow-up questions.
-                    </p>
-                </div>
-                <div class="pb-legend">
-                    <span class="pb-chip"><span class="pb-sw pb-spot"></span>Spotlights &middot; 1408&ndash;1412</span>
-                    <span class="pb-chip"><span class="pb-sw pb-oral"></span>Orals &middot; 1508&ndash;1510</span>
-                    <span class="pb-chip"><span class="pb-sw pb-post"></span>Posters &middot; rest of zone</span>
-                </div>
-                <figure class="poster-map">
-                    <a href="img/poster_hall_a.png" target="_blank" rel="noopener">
-                        <img src="img/poster_hall_a.png" alt="Hall A (1F) floor plan with the Forecasting Workshop boards highlighted: spotlights (orange) on 1408-1412, orals (blue) on 1508-1510, and posters (green) on 1413-1417, 1500-1517 and 1600-1611" loading="lazy">
-                    </a>
-                    <figcaption>Hall&nbsp;A (1F) &mdash; our boards are highlighted near the centre of the hall. Tap the map to open it full size.</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <!-- Organizers Section -->
-        <section id="organizers">
-            <div class="container">
-                <h2 class="section-title">Organizing Committee</h2>
-
-                <div class="organizer-grid">
-                    <!-- Organizer 1 -->
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="img/haifeng_xu.png" alt="Haifeng Xu" />
-                        </div>
-                        <h3>Haifeng Xu</h3>
-                        <p>Assistant Professor<br/>University of Chicago</p>
-                    </div>
-
-                    <!-- Organizer 2 -->
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="img/jibang_wu.jpg" alt="Jibang Wu" />
-                        </div>
-                        <h3>Jibang Wu</h3>
-                        <p>Assistant Professor<br/>New York University, Shanghai</p>
-                    </div>
-
-                    <!-- Organizer 3 -->
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="img/ruslan_salakhutdinov.jpg" alt="Ruslan Salakhutdinov" />
-                        </div>
-                        <h3>Ruslan Salakhutdinov</h3>
-                        <p>Professor<br/>Carnegie Mellon University</p>
-                    </div>
-
-                    <!-- Organizer 4 -->
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="img/star_li.png" alt="Star Li" />
-                        </div>
-                        <h3>Star Li</h3>
-                        <p>PhD Student<br/>University of Chicago</p>
-                    </div>
-
-                    <!-- Organizer 5 -->
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="img/ezra_karger.png" alt="Ezra Karger" />
-                        </div>
-                        <h3>Ezra Karger</h3>
-                        <p>Director of Research<br/>Forecasting Research Institute</p>
-                    </div>
-
-                    <!-- Organizer 6 -->
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="img/nicolai_ouporov.png" alt="Nicolai Ouporov" />
-                        </div>
-                        <h3>Nicolai Ouporov</h3>
-                        <p>Co-founder &amp; CEO<br/>Fleet AI</p>
-                    </div>
-
-                    <!-- Organizer 7 -->
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="img/simon_mahns.jpg" alt="Simon Mahns" />
-                        </div>
-                        <h3>Simon Mahns</h3>
-                        <p>Researcher<br/>Axiom Math</p>
-                    </div>
-
-                    <!-- Organizer 8 -->
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="img/anri_gu.png" alt="Anri Gu" />
-                        </div>
-                        <h3>Anri Gu</h3>
-                        <p>PhD Student<br/>University of Chicago</p>
-                    </div>
-
-                    <!-- Organizer 9 -->
-                    <div class="organizer-card">
-                        <div class="profile-image">
-                            <img src="img/qingchuan_yang.jpg" alt="Qingchuan Yang" />
-                        </div>
-                        <h3>Qingchuan Yang</h3>
-                        <p>PhD Student<br/>University of Southern California</p>
-                    </div>
+                    <p>Everyone at ICML 2026 is welcome to join us. There are three ways to get the most out of the workshop, and they go hand in hand &mdash; we'd love for you to do all three: register to be there in person, sharpen your forecasting on Prophet Markets, and, if you'd like, share your CV with our sponsors.</p>
                 </div>
 
-                <div class="content-box mt-2">
-                    <p class="text-small" style="margin-bottom: 0;">
-                        <strong>Contact:</strong> For all communications regarding the workshop, please contact
-                        <a href="mailto:forecastworkshop@gmail.com">forecastworkshop@gmail.com</a>.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Program Committee Section (hidden pending permission confirmation) -->
-        <!--
-        <section id="committee">
-            <div class="container">
-                <h2 class="section-title">Program Committee</h2>
-                <p>The following researchers have agreed to serve as reviewers. Submissions will be handled through OpenReview.</p>
-                <div class="committee-list">
-                    <div class="committee-member">
-                        <span class="name">Minbiao Han</span>
-                        <div class="role">Research Scientist, Microsoft</div>
-                    </div>
-                    <div class="committee-member">
-                        <span class="name">Yao Fan</span>
-                        <div class="role">Assistant Professor, UNC</div>
-                    </div>
-                    <div class="committee-member">
-                        <span class="name">Siddarth Srinivasan</span>
-                        <div class="role">Post-doc, Harvard</div>
-                    </div>
-                    <div class="committee-member">
-                        <span class="name">Seyed A. Esmaeili</span>
-                        <div class="role">Post-doc, UChicago</div>
-                    </div>
-                    <div class="committee-member">
-                        <span class="name">Ganghua Wang</span>
-                        <div class="role">Post-doc, UChicago</div>
-                    </div>
-                    <div class="committee-member">
-                        <span class="name">Kelly He</span>
-                        <div class="role">PhD Student, CMU</div>
-                    </div>
-                    <div class="committee-member">
-                        <span class="name">Brandon Trabucco</span>
-                        <div class="role">PhD Student, CMU</div>
-                    </div>
-                    <div class="committee-member">
-                        <span class="name">Fahim Tajwar</span>
-                        <div class="role">PhD Student, CMU</div>
-                    </div>
-                    <div class="committee-member">
-                        <span class="name">Yuwei Cheng</span>
-                        <div class="role">PhD Student, UChicago</div>
-                    </div>
-                    <div class="committee-member">
-                        <span class="name">Aditya Prasad</span>
-                        <div class="role">PhD Student, UChicago</div>
-                    </div>
-                    <div class="committee-member">
-                        <span class="name">Alec Sun</span>
-                        <div class="role">PhD Student, UChicago</div>
-                    </div>
-                    <div class="committee-member">
-                        <span class="name">Anri Gu</span>
-                        <div class="role">PhD Student, UChicago</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
-
-        <!-- Sponsors Section -->
-        <section id="sponsors">
-            <div class="container">
-                <h2 class="section-title">Sponsors</h2>
-                <p>We gratefully acknowledge the support of our sponsors, whose generosity makes the workshop, the hackathon, and our paper awards possible.</p>
-                <div class="sponsor-grid">
-                    <a href="https://kalshi.com/" class="sponsor-card" target="_blank" title="Kalshi">
-                        <img src="img/kalshi_logo.svg" alt="Kalshi" />
-                    </a>
-                    <a href="https://www.fleetai.com/" class="sponsor-card" target="_blank" title="Fleet AI">
-                        <img src="img/fleetai_logo.svg" alt="Fleet AI" />
-                    </a>
-                    <a href="https://www.causallabs.ai/" class="sponsor-card" target="_blank" title="Causal Labs">
-                        <img src="img/causallabs_logo.svg" alt="Causal Labs" />
-                    </a>
-                    <a href="https://sig.com/" class="sponsor-card" target="_blank" title="Susquehanna International Group (SIG)">
-                        <img src="img/susquehanna_logo.png" alt="Susquehanna International Group (SIG)" />
-                    </a>
-                </div>
-                <p class="text-muted text-small mt-2">Interested in sponsoring? Reach out at <a href="mailto:forecastworkshop@gmail.com">forecastworkshop@gmail.com</a>.</p>
-            </div>
-        </section>
-
-        <!-- Call for Papers Section -->
-        <section id="cfp">
-            <div class="container">
-                <h2 class="section-title">Call for Papers</h2>
-
-                <div class="section-intro">
-                    <p>
-                        We invite submissions on all aspects of AI forecasting, from methodological advances to benchmark design to applications in real-world domains. Papers should be submitted via OpenReview and will undergo peer review by our program committee.
-                    </p>
-                    <p>
-                        Accepted papers will be presented as posters during the workshop, with selected papers invited for oral presentations. A best paper award will be given at the closing session.
-                    </p>
-                </div>
-
-                <!-- Key Dates -->
+                <!-- Registration -->
                 <div class="subsection">
-                    <h3 class="subsection-title">Key Dates</h3>
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Event</th>
-                                <th>Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Submission Portal Opens</td>
-                                <td>April 21, 2026</td>
-                            </tr>
-                            <tr>
-                                <td>Abstract Registration Deadline</td>
-                                <td>May 11, 2026 (11:59 PM UTC, not AoE)</td>
-                            </tr>
-                            <tr>
-                                <td>Submission Deadline</td>
-                                <td>May 13, 2026 (11:59 PM UTC, not AoE)</td>
-                            </tr>
-                            <tr>
-                                <td>Reviewer Bidding</td>
-                                <td>May 15&ndash;18, 2026</td>
-                            </tr>
-                            <tr>
-                                <td>Review Period</td>
-                                <td>May 20 &ndash; June 8, 2026</td>
-                            </tr>
-                            <tr>
-                                <td>Author Notification</td>
-                                <td>June 10, 2026</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- Submission Guidelines -->
-                <div class="subsection">
-                    <h3 class="subsection-title">Submission Guidelines</h3>
+                    <h3 class="subsection-title">Registration</h3>
                     <div class="content-box">
-                        <p><strong>Format:</strong> Submissions should be up to 4 pages (excluding references and appendix) using the ICML 2026 template.</p>
-                        <p><strong>Anonymity:</strong> All submissions should be anonymized for double-blind review.</p>
-                        <p><strong>Non-archival &amp; Dual Submission:</strong> The workshop is non-archival, so dual submission is allowed &mdash; we welcome submissions of work that has been previously published or is under review elsewhere, with proper disclosure.</p>
-                        <p><strong>Platform:</strong> Submissions will be handled through OpenReview.</p>
-                        <p style="margin-bottom: 0;"><a href="https://openreview.net/group?id=ICML.cc/2026/Workshop/Forecast" class="btn btn-primary" style="margin-top: 0.75rem;" target="_blank">Submit via OpenReview</a></p>
+                        <p>Our workshop is part of ICML 2026, so attendance is handled through the main conference. Register on the <a href="https://icml.cc/" target="_blank">ICML 2026 registration page</a> &mdash; you can pick up a full-conference pass or a workshop-only pass, whichever fits your plans. We hope to see you in Seoul on July 11.</p>
+                        <p>Together with our sponsors, we're also putting together an optional resume book. If you're open to research, internship, collaboration, or career opportunities, you're welcome to share your CV with the participating sponsors.</p>
+                        <p style="margin-bottom: 0;">Submitting is entirely voluntary through <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBjtOL9gdQ5hFGNm-nx3KTjF426cWQzAk1caTR_MmJjx-UPw/viewform?usp=dialog" target="_blank">this form</a>, and your choice has no bearing whatsoever on your paper, presentation, or participation in the workshop.</p>
                     </div>
                 </div>
 
-                <!-- Hackathon -->
+                <!-- Prophet Markets -->
                 <div class="subsection">
-                    <h3 class="subsection-title">Forecasting Agent Hackathon</h3>
+                    <h3 class="subsection-title">Mini Prediction Market</h3>
                     <div class="content-box">
+                        <p>We built a mini prediction market &mdash; <a href="https://forecastingmarkets.org/" target="_blank">Prophet Markets</a> &mdash; a fun, no-stakes way to get hands-on with prediction markets. Trade on real workshop questions with virtual money, bring your AI and forecasting expertise to bear on sharper predictions, and climb the leaderboard as you go.</p>
+                        <p>To boost engagement, everyone who registers for the workshop and submits their CV through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBjtOL9gdQ5hFGNm-nx3KTjF426cWQzAk1caTR_MmJjx-UPw/viewform?usp=dialog" target="_blank">form above</a> gets <strong>100 credits</strong> to start trading &mdash; and if you join us in person for the opening remarks on <strong>July 11</strong>, you'll receive <strong>another 100 credits</strong>. The top three forecasters win prizes:</p>
+                        <ul class="topics-list">
+                            <li><strong>1st place</strong> &mdash; choice of Meta glasses (Gen&nbsp;2), AirPods Pro&nbsp;3, or a DJI Neo.</li>
+                            <li><strong>2nd place</strong> &mdash; choice of the LEGO World Cup Trophy set or a Kindle Paperwhite.</li>
+                            <li><strong>3rd place</strong> &mdash; choice of an AirTag 4-pack or an Anker MagGo wireless power bank.</li>
+                        </ul>
+                        <p class="text-muted text-small" style="margin-bottom: 0;"><em>Prizes are subject to terms and conditions &mdash; including but not limited to a minimum number of participants, a minimum number of trades, and similar requirements &mdash; as determined by the workshop organizers.</em></p>
+                    </div>
+                </div>
+
+                <div class="subsection" id="posters">
+                    <h3 class="subsection-title">Poster Session</h3>
+                    <div class="section-intro">
                         <p>
-                            Ahead of the workshop, we co-hosted the <a href="https://www.prophethacks.com/" target="_blank">AI Forecasting Hackathon</a> (May 16&ndash;17, 2026), where participants built forecasting agents and competed on the Prophet Arena leaderboard.
+                            The poster session runs during <strong>lunch, 12:15&ndash;13:30</strong>, in <strong>Hall&nbsp;A (1F)</strong>. Our boards are highlighted on the hall map below: <strong>spotlights</strong> on 1408&ndash;1412, <strong>orals</strong> on 1508&ndash;1510, and <strong>posters</strong> on the remaining boards (1413&ndash;1417, 1500&ndash;1517, 1600&ndash;1611). Put your poster up anywhere within your section &mdash; tape will be provided at the workshop.
                         </p>
                         <p style="margin-bottom: 0;">
-                            Congratulations to our winners, <strong>Hanson Wen</strong> (UC Berkeley) and <strong>James Gui</strong> (USC), who will share their approach during the Hackathon Winner Presentation in the workshop program, and to our runner-up, <strong>Shirish Chinchanikar</strong> (UChicago).
+                            <strong>Oral presenters:</strong> a poster is optional but recommended &mdash; it's a great way to share your work with attendees who can't make the talk or who have follow-up questions.
                         </p>
                     </div>
+                    <div class="pb-legend">
+                        <span class="pb-chip"><span class="pb-sw pb-spot"></span>Spotlights &middot; 1408&ndash;1412</span>
+                        <span class="pb-chip"><span class="pb-sw pb-oral"></span>Orals &middot; 1508&ndash;1510</span>
+                        <span class="pb-chip"><span class="pb-sw pb-post"></span>Posters &middot; rest of zone</span>
+                    </div>
+                    <figure class="poster-map">
+                        <a href="img/poster_hall_a.png" target="_blank" rel="noopener">
+                            <img src="img/poster_hall_a.png" alt="Hall A (1F) floor plan with the Forecasting Workshop boards highlighted: spotlights (orange) on 1408-1412, orals (blue) on 1508-1510, and posters (green) on 1413-1417, 1500-1517 and 1600-1611" loading="lazy">
+                        </a>
+                        <figcaption>Hall&nbsp;A (1F) &mdash; our boards are highlighted near the centre of the hall. Tap the map to open it full size.</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
-
-        <!-- FAQ Section -->
-        <section id="faq">
-            <div class="container">
-                <h2 class="section-title">FAQ</h2>
-
-                <details class="faq-item">
-                    <summary class="faq-question">How do I submit a camera-ready version of my paper?</summary>
-                    <div class="faq-answer">
-                        <p style="margin-bottom: 0;">Go back into <a href="https://openreview.net/" target="_blank">OpenReview</a>, open your submission, click <strong>Edit</strong>, and feel free to upload an edited version of your paper. Please make any edits by <strong>June 25, 2026, 11:59 pm UTC</strong>.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">What format should my poster follow?</summary>
-                    <div class="faq-answer">
-                        <p style="margin-bottom: 0;">Posters should follow the <a href="https://icml.cc/Conferences/2026/PosterInstructions" target="_blank">ICML 2026 poster instructions</a>, though there is some flexibility in the format.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">What does a spotlight mean?</summary>
-                    <div class="faq-answer">
-                        <p style="margin-bottom: 0;">A spotlight is presented as a poster, following the same format described above. In addition, we will place a sign next to your poster indicating that your submission achieved a higher bar.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">What does an oral mean?</summary>
-                    <div class="faq-answer">
-                        <p>An oral is an 8&ndash;10 minute presentation given at the workshop explaining your approach and results. We <strong>strongly</strong> prefer in-person presentations &mdash; please email us ASAP if you won't be able to attend.</p>
-                        <p style="margin-bottom: 0;">Please prepare a set of slides and email them to us at <a href="mailto:forecastworkshop@gmail.com">forecastworkshop@gmail.com</a>, and let us know if you need any special arrangements.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">When will our presentation time be?</summary>
-                    <div class="faq-answer">
-                        <p style="margin-bottom: 0;">We will allocate presentation times later &mdash; please email us if you have preferences. The slots are listed on this website under <a href="#schedule">Schedule</a>.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">Which ICML registration should I buy?</summary>
-                    <div class="faq-answer">
-                        <p style="margin-bottom: 0;">We recommend attending the full conference, but if you aren't interested in the main conference, feel free to just buy the workshop registration. Please note that <strong>we do not reimburse registration fees</strong>.</p>
-                    </div>
-                </details>
-
-                <p class="text-muted text-small mt-2"><em>More to come &mdash; we'll keep adding answers here as more questions arrive. Have a question? Email us at <a href="mailto:forecastworkshop@gmail.com">forecastworkshop@gmail.com</a>.</em></p>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" style="border-bottom: none;">
-            <div class="container">
-                <h2 class="section-title">Contact &amp; Social Media</h2>
-                <div class="content-box">
-                    <p><strong>Email:</strong> <a href="mailto:forecastworkshop@gmail.com">forecastworkshop@gmail.com</a></p>
-                    <p style="margin-bottom: 0;"><strong>Follow us:</strong> Updates and announcements will be posted on this website and through the organizers' channels.</p>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <!-- Speaker Bio Modal -->
@@ -1202,128 +458,8 @@
                     <p style="font-family: 'Libre Baskerville', serif; margin-bottom: 0.25rem;">Workshop on AI Forecasting</p>
                     <p class="text-small" style="opacity: 0.7;">ICML 2026 · Seoul, South Korea</p>
                 </div>
-                <div class="footer-links">
-                    <a href="mailto:forecastworkshop@gmail.com" class="footer-link">
-                        <i data-lucide="mail"></i>
-                        <span>Email</span>
-                    </a>
-                    <a href="#" class="footer-link">
-                        <i data-lucide="twitter"></i>
-                        <span>Twitter</span>
-                    </a>
-                    <a href="https://www.prophethacks.com/" class="footer-link" target="_blank">
-                        <i data-lucide="trophy"></i>
-                        <span>Hackathon</span>
-                    </a>
-                </div>
             </div>
         </div>
     </footer>
-
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const navLinks = document.getElementById('navLinks');
-            navLinks.classList.toggle('show');
-        }
-
-        // Speaker bio modal
-        function toggleSpeakerBio(button) {
-            const card = button.closest('.speaker-card');
-            const name = card.querySelector('h3').textContent;
-            const affiliation = card.querySelector('.affiliation').textContent;
-            const bio = card.querySelector('.speaker-bio-content p').textContent;
-            const img = card.querySelector('.speaker-image-col img');
-
-            document.getElementById('modalName').textContent = name;
-            document.getElementById('modalAffiliation').textContent = affiliation;
-            document.getElementById('modalBio').textContent = bio;
-
-            const avatar = document.getElementById('modalAvatar');
-            if (img) {
-                avatar.src = img.src;
-                avatar.alt = img.alt;
-                avatar.style.display = 'block';
-            } else {
-                avatar.style.display = 'none';
-            }
-
-            document.getElementById('speakerModal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeSpeakerModal() {
-            document.getElementById('speakerModal').classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        // Close modal on overlay click
-        document.getElementById('speakerModal').addEventListener('click', function(e) {
-            if (e.target === this) closeSpeakerModal();
-        });
-
-        // Close modal on Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeSpeakerModal();
-        });
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('.navbar-link').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('navLinks').classList.remove('show');
-            });
-        });
-
-        // Smooth scroll offset for fixed navbar
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offset = 70;
-                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Author <-> affiliation cross-highlight: click/tap to pin a group (touch-friendly; complements CSS hover)
-        (function () {
-            let pinnedEl = null;
-
-            function clearPins() {
-                document.querySelectorAll('.affil-pinned').forEach(el => el.classList.remove('affil-pinned'));
-                pinnedEl = null;
-            }
-
-            function pinGroup(el) {
-                const scope = el.closest('.paper-item, .schedule-talk-list li');
-                if (!scope) return;
-                el.getAttribute('data-affil').split(/\s+/).forEach(idx => {
-                    if (!idx) return;
-                    scope.querySelectorAll('[data-affil~="' + idx + '"]').forEach(t => t.classList.add('affil-pinned'));
-                });
-            }
-
-            document.querySelectorAll('.author[data-affil], .affil[data-affil]').forEach(el => {
-                el.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    const wasPinned = (el === pinnedEl);
-                    clearPins();
-                    if (!wasPinned) { pinnedEl = el; pinGroup(el); }
-                });
-            });
-
-            // Click anywhere else clears the pinned highlight
-            document.addEventListener('click', clearPins);
-        })();
-
-    </script>
 </body>
 </html>
