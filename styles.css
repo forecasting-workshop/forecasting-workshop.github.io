@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar-inner {
-    max-width: 1280px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0.875rem 1.5rem;
     display: flex;
@@ -84,21 +84,6 @@ h1, h2, h3, h4, h5 {
     font-weight: 600;
     border-bottom: 2px solid var(--color-accent);
     padding-bottom: 2px;
-}
-
-/* Center the nav links on desktop, keeping the brand pinned to the left */
-@media (min-width: 769px) {
-    .navbar-inner {
-        position: relative;
-        justify-content: center;
-    }
-
-    .navbar-brand {
-        position: absolute;
-        left: 1.5rem;
-        top: 50%;
-        transform: translateY(-50%);
-    }
 }
 
 /* Mobile menu */
@@ -325,9 +310,9 @@ section {
 .anchor-link {
     position: absolute;
     left: calc(100% + 0.4rem);
-    /* span only the text line (exclude the title's padding-bottom) and center the icon on it */
+    /* span the full heading box (text line + underline gap) so the icon reads as centered on the heading */
     top: 0;
-    bottom: 0.75rem;
+    bottom: 0;
     display: inline-flex;
     align-items: center;
     color: var(--color-accent);
@@ -343,8 +328,8 @@ section {
 }
 
 .anchor-link [data-lucide] {
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 /* "Copied!" confirmation shown after clicking a deep-link icon */
