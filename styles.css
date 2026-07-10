@@ -146,6 +146,20 @@ h1, h2, h3, h4, h5 {
     background-color: var(--color-ink-light);
 }
 
+/* Stacked banners: only the first clears the fixed navbar */
+.announcement-banner + .announcement-banner {
+    margin-top: 0;
+}
+
+/* Live / virtual-attendance banner stands apart from the accent banner */
+.announcement-banner--live {
+    background-color: var(--color-ink);
+}
+
+.announcement-banner--live:hover {
+    background-color: var(--color-ink-light);
+}
+
 .announcement-banner svg {
     width: 18px;
     height: 18px;
